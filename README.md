@@ -1,4 +1,4 @@
-Hi 👋 My name is Eddie Elorza
+Hi There!👋 My name is Eddie Elorza
 =============================
 
 Software Developer
