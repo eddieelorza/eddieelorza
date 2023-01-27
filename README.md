@@ -1,4 +1,4 @@
-<h2 align="left"><img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> Hi there! My name is <span style="color:blue">some *blue* text</span>.</h2>
+<h2 align="left"><img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> Hi there! My name is <span style="color:blue">Eddie Elorza</span>.</h2>
 
  ![visitors](https://visitor-badge.glitch.me/badge?page_id=eddieelorza.visitor-badge&left_color=black&right_color=purple)
  
