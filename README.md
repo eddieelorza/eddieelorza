@@ -8,8 +8,7 @@ Software Developer
 * ✉️  You can contact me at [Edd.elorza@gmail.com](mailto:Edd.elorza@gmail.com)
 * 🧠  I'm learning web development and AI
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=eddieelorza&theme=radical&show_icons=true)
-
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=eddieelorza&theme=dark&show_icons=true)
 
 ---
 
