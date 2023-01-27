@@ -15,6 +15,7 @@ src="https://img.shields.io/twitter/follow/eddieelorza?logo=twitter&style=for-th
 
 
 <img width="0" src="https://visitor-badge.glitch.me/badge?page_id=tondrejk.tondrejk" />
+                    ![visitors](https://visitor-badge.glitch.me/badge?page_id=page.id&left_color=green&right_color=red)
 
 
 ### Skills
