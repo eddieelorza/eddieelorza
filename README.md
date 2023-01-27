@@ -10,10 +10,8 @@
 ---
 Software Developer
 ------------------
-
-* 🌍  I'm based in MEXICO
+* 🧠 I'm Information Technology Engineer and master's student of applied artificial intelligence at Tec de Monterrey
 * ✉️  You can contact me at [Edd.elorza@gmail.com](mailto:Edd.elorza@gmail.com)
-* 🧠  I'm learning web development and AI
 
 ![Eddie's GitHub stats](https://github-readme-stats.vercel.app/api?username=eddieelorza&show_icons=true&theme=radical&hide_border=true)
 
