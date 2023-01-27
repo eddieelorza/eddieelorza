@@ -1,4 +1,4 @@
-<h3 align="center"><img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> Hi there! My name is Eddie Elorza</h3>
+<h3 align="left"><img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> Hi there! My name is Eddie Elorza</h3>
 ----
 
 Software Developer
