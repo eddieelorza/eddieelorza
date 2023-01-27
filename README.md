@@ -12,4 +12,4 @@ Software Developer
 src="https://img.shields.io/twitter/follow/eddieelorza?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
 /></a>
 
-<img width="0" src="https://visitor-badge.glitch.me/badge?page_id=eddieelorza.eddieelorza" />
+![](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg)
