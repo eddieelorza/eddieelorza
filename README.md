@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Eddie Elorza
 
-### Product-Oriented Frontend Engineer  
+### Product Engineer  
 Building scalable fintech experiences, intelligent systems, and high-traffic platforms.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/eddie-elorza)
