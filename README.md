@@ -1,65 +1,166 @@
 <div align="center">
-  
+
 # 👋 Hi, I'm Eddie Elorza
 
-### Product Engineer  
-Building scalable fintech experiences, intelligent systems, and high-traffic platforms.
+### Product Engineer | AI & Fintech
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/eddie-elorza)
-[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=flat-square&logo=vercel&logoColor=white)](https://eddieelorza.com)
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/eddieelorza)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:edd.elorza@gmail.com)
+Building products at the intersection of engineering, artificial intelligence, and business impact.
 
-![](https://komarev.com/ghpvc/?username=eddieelorza&style=flat-square&color=orange)
+LinkedIn
+Portfolio
+Telegram
+Email
+
+￼
 
 </div>
 
 ---
 
-## 🚀 About Me
+## 🚀 Impact at a Glance
 
-- 💻 Frontend Engineer & Product-minded builder focused on fintech and scalable systems
-- 🏦 Experience building payment platforms handling millions of transactions
-- 🧠 Master's Degree in Applied Artificial Intelligence — Tec de Monterrey
-- ⚡ Passionate about product strategy, UX, architecture, and intelligent software
-- 🌎 Based in Mexico City
-- ✉️ Reach me at: **edd.elorza@gmail.com**
+- 💳 Built and evolved fintech and payment platforms supporting millions of transactions
+- 🤖 Designed AI-powered automations for operational and financial workflows
+- 📈 Product-focused engineer bridging business, UX, data, and technology
+- 🎓 MSc in Applied Artificial Intelligence
+- 🏆 Professional Scrum Product Owner™ I (PSPO I)
+- ⚡ Passionate about building scalable products that drive measurable business outcomes
 
 ---
 
-## 🧩 What I Work With
+## 🧠 About Me
 
-### Frontend & Product Engineering
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript)
-![Vue](https://img.shields.io/badge/Vue-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white)
-![Webpack](https://img.shields.io/badge/Module_Federation-8D4FFF?style=for-the-badge&logo=webpack&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-0F172A?style=for-the-badge&logo=tailwind-css)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+I'm a Product Engineer with a hybrid background across software engineering, product strategy, and applied artificial intelligence.
 
-### Backend, Cloud & DevOps
-![NodeJS](https://img.shields.io/badge/Node.js-111111?style=for-the-badge&logo=node.js)
-![Docker](https://img.shields.io/badge/Docker-111111?style=for-the-badge&logo=docker)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-111111?style=for-the-badge&logo=kubernetes)
-![NGINX](https://img.shields.io/badge/NGINX-111111?style=for-the-badge&logo=nginx)
-![Jenkins](https://img.shields.io/badge/Jenkins-111111?style=for-the-badge&logo=jenkins)
-![AWS](https://img.shields.io/badge/AWS-111111?style=for-the-badge&logo=amazonaws)
-![Google Cloud](https://img.shields.io/badge/GCP-111111?style=for-the-badge&logo=googlecloud)
+Over the past several years, I've worked on fintech products, payment systems, high-traffic platforms, and AI-driven solutions, collaborating with business, UX, and engineering teams to deliver scalable experiences aligned with customer and business goals.
 
-### AI, Data & Automation
-![Python](https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-111111?style=for-the-badge&logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-111111?style=for-the-badge&logo=numpy)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-111111?style=for-the-badge&logo=scikitlearn)
-![Keras](https://img.shields.io/badge/Keras-111111?style=for-the-badge&logo=keras)
+My approach combines:
 
-### Product & Design
-![Figma](https://img.shields.io/badge/Figma-111111?style=for-the-badge&logo=figma)
-![Notion](https://img.shields.io/badge/Notion-111111?style=for-the-badge&logo=notion)
-![Jira](https://img.shields.io/badge/Jira-111111?style=for-the-badge&logo=jira)
-![Confluence](https://img.shields.io/badge/Confluence-111111?style=for-the-badge&logo=confluence)
-![Canva](https://img.shields.io/badge/Canva-111111?style=for-the-badge&logo=canva)
+- Product Thinking
+- Technical Execution
+- Data-Driven Decision Making
+- User-Centered Design
+- AI & Automation
+
+Currently focused on Product Engineering, AI-powered workflows, and building intelligent systems that create real business impact.
+
+📍 Mexico City, Mexico
+
+✉️ edd.elorza@gmail.com
+
+---
+
+## 🎯 Areas of Expertise
+
+### Product
+
+- Product Discovery
+- Product Strategy
+- Roadmapping
+- Prioritization
+- Stakeholder Management
+- KPI Definition & Tracking
+- Product Analytics
+- User-Centered Design
+
+### AI & Automation
+
+- Applied Artificial Intelligence
+- Agentic Workflows
+- Process Automation
+- LLM Integrations
+- AI-Powered Products
+- Intelligent Systems
+
+### Engineering
+
+- Frontend Architecture
+- Microfrontends
+- System Design
+- API Integrations
+- High-Traffic Platforms
+- Scalable Web Applications
+
+### Data & Analytics
+
+- Product Metrics
+- Dashboards & Reporting
+- Root Cause Analysis
+- Data Visualization
+- Operational Analytics
+- Decision Intelligence
+
+---
+
+## ⚙️ Core Technologies
+
+### Frontend
+
+React
+TypeScript
+JavaScript
+Vue
+TailwindCSS
+Webpack
+
+### AI & Data
+
+Python
+Pandas
+NumPy
+scikit-learn
+
+### Infrastructure
+
+Docker
+AWS
+Azure
+Jenkins
+
+### Product & Collaboration
+
+Jira
+Confluence
+Notion
+Figma
+
+---
+
+## 💼 Selected Experience
+
+### Product Engineer | Tech Lead
+Banco Azteca / Grupo Salinas
+
+- Led product and technical initiatives for a high-volume payment platform
+- Coordinated migration toward a microfrontend architecture
+- Partnered with product, business, UX and engineering stakeholders
+- Built AI-powered automations for operational and payment workflows
+- Contributed to scalable systems supporting fintech operations at scale
+
+### Frontend Engineer
+
+- Developed and scaled customer-facing applications used by thousands of users
+- Designed reusable architectures and frontend platforms
+- Collaborated closely with product teams to improve customer experiences
+- Focused on performance, maintainability and business outcomes
+
+---
+
+## 🏆 Education & Certifications
+
+🎓 MSc in Applied Artificial Intelligence
+
+🏆 Professional Scrum Product Owner™ I (PSPO I)
+
+🤖 Advanced Certificate in Artificial Intelligence & Machine Learning
+
+📊 Advanced Certificate in Data Science
+
+📈 Advanced Certificate in Data Visualization
+
+☁️ Microsoft Azure Fundamentals
+
+📋 Scrum Fundamentals Certification
 
 ---
 
@@ -75,15 +176,15 @@ Building scalable fintech experiences, intelligent systems, and high-traffic pla
 
 ---
 
-## 🧠 Current Focus
+## 🎯 Current Focus
 
 - Product Engineering
-- Frontend Architecture
-- AI-powered Workflows
-- Fintech Platforms
-- Developer Experience
-- Scalable Systems
+- AI Product Management
 - Intelligent Automation
+- Product Analytics
+- Payment Infrastructure
+- Fintech Platforms
+- Scalable Digital Products
 
 ---
 
@@ -91,7 +192,7 @@ Building scalable fintech experiences, intelligent systems, and high-traffic pla
 
 <div align="center">
 
-### → [eddieelorza.com](https://eddieelorza.com)
+### → https://eddieelorza.com
 
 </div>
 
@@ -99,7 +200,7 @@ Building scalable fintech experiences, intelligent systems, and high-traffic pla
 
 <div align="center">
 
-### ⚡ Building products with engineering, business and design in mind.
+### ⚡ Bridging product thinking, engineering execution, and AI to build scalable digital products.
 
 </div>
 
@@ -107,6 +208,6 @@ Building scalable fintech experiences, intelligent systems, and high-traffic pla
 
 <div align="center">
 
-![](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg)
+￼
 
-</div>
+</di
