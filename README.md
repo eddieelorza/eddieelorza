@@ -1,213 +1,266 @@
+👋 Hi, I’m Eddie Elorza
+
+AI Product Engineer | Frontend Architecture | Product Strategy | Digital Transformation
+
+Building AI-powered products that connect engineering, product, data, and business to create measurable impact.
+
 <div align="center">
 
-# 👋 Hi, I'm Eddie Elorza
-
-### Product Engineer | AI & Fintech
-
-Building products at the intersection of engineering, artificial intelligence, and business impact.
-
-LinkedIn
-Portfolio
-Telegram
-Email
-
-￼
+LinkedIn • Portfolio • Email
 
 </div>
 
----
+⸻
 
-## 🚀 Impact at a Glance
+🚀 Mission
 
-- 💳 Built and evolved fintech and payment platforms supporting millions of transactions
-- 🤖 Designed AI-powered automations for operational and financial workflows
-- 📈 Product-focused engineer bridging business, UX, data, and technology
-- 🎓 MSc in Applied Artificial Intelligence
-- 🏆 Professional Scrum Product Owner™ I (PSPO I)
-- ⚡ Passionate about building scalable products that drive measurable business outcomes
+I believe great products are built at the intersection of:
 
----
+* 🤖 Artificial Intelligence
+* 💡 Product Thinking
+* ⚙️ Engineering Excellence
+* 📊 Data-Driven Decision Making
+* 🎯 Business Strategy
 
-## 🧠 About Me
+My goal is to build intelligent products that solve real problems and generate measurable business outcomes.
 
-I'm a Product Engineer with a hybrid background across software engineering, product strategy, and applied artificial intelligence.
+⸻
 
-Over the past several years, I've worked on fintech products, payment systems, high-traffic platforms, and AI-driven solutions, collaborating with business, UX, and engineering teams to deliver scalable experiences aligned with customer and business goals.
+📈 Business Impact
 
-My approach combines:
+💳 Fintech & Payments
 
-- Product Thinking
-- Technical Execution
-- Data-Driven Decision Making
-- User-Centered Design
-- AI & Automation
+* Built and evolved payment and financial products.
+* Contributed to large-scale fintech platforms.
+* Worked on payment flows, collections, customer experience, and financial operations.
 
-Currently focused on Product Engineering, AI-powered workflows, and building intelligent systems that create real business impact.
+⚡ Process Automation
+
+* Reduced operational workflows from 6 hours to 2 hours through automation.
+* Designed AI-powered solutions for operational and financial processes.
+* Built intelligent workflows that improved efficiency and reduced manual work.
+
+🏗️ Architecture & Scalability
+
+* Participated in the migration from monolithic applications to a microfrontend architecture.
+* Improved frontend performance, maintainability, and scalability.
+* Designed reusable components and modular systems.
+
+🤝 Product & Business
+
+* Collaborated with business, product, UX, QA, and engineering teams.
+* Participated in product discovery, roadmap discussions, backlog management, and feature prioritization.
+* Focused on delivering products aligned with business objectives and customer needs.
+
+⸻
+
+🧠 What I Build
+
+I enjoy working across the entire product lifecycle:
+
+Discovery
+        ↓
+Product Strategy
+        ↓
+Architecture
+        ↓
+Development
+        ↓
+Analytics
+        ↓
+Optimization
+
+I love transforming ideas into products through a combination of technology, product thinking, and artificial intelligence.
+
+⸻
+
+🎯 Areas of Expertise
+
+🤖 AI & Automation
+
+* Applied Artificial Intelligence
+* AI-Powered Products
+* Agentic Workflows
+* LLM Integrations
+* AI Automation
+* Intelligent Systems
+* Workflow Automation
+
+🚀 Product
+
+* Product Discovery
+* Product Strategy
+* Roadmapping
+* Product Analytics
+* Prioritization
+* KPI Definition
+* Stakeholder Management
+* User-Centered Design
+
+⚙️ Engineering
+
+* Frontend Architecture
+* React Ecosystem
+* Microfrontends
+* System Design
+* API Integrations
+* High-Traffic Platforms
+* Scalable Web Applications
+* Performance Optimization
+
+📊 Data & Analytics
+
+* Product Metrics
+* Operational Analytics
+* Data Visualization
+* Dashboards & Reporting
+* Root Cause Analysis
+* Decision Intelligence
+
+⸻
+
+🛠️ Tech Stack
+
+Frontend
+
+<p>
+<img src="https://skillicons.dev/icons?i=react,ts,js,vue,tailwind,webpack" />
+</p>
+
+AI & Data
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,sklearn,azure" />
+</p>
+
+Infrastructure
+
+<p>
+<img src="https://skillicons.dev/icons?i=docker,aws,azure,jenkins" />
+</p>
+
+Product & Collaboration
+
+<p>
+<img src="https://skillicons.dev/icons?i=figma" />
+</p>
+
+* Jira
+* Confluence
+* Notion
+
+⸻
+
+🤝 Leadership
+
+* Cross-functional Collaboration
+* Technical Leadership
+* Product Ownership
+* Agile Methodologies
+* Sprint Planning
+* Technical Discovery
+* Team Coordination
+* Backlog Management
+* Stakeholder Alignment
+* Roadmap Planning
+
+⸻
+
+🚧 Featured Projects
+
+🏨 Hotel Commercial Intelligence Platform
+
+An AI-ready CRM platform designed to improve commercial operations in the hospitality industry.
+
+Focus:
+
+* Product discovery
+* Business modeling
+* CRM design
+* Analytics
+* Automation
+* AI integration
+
+⸻
+
+🍽️ Restaurant Digital Menu SaaS
+
+A product designed to modernize the restaurant experience through digital tools and future AI capabilities.
+
+Focus:
+
+* Product strategy
+* MVP development
+* Customer validation
+* Growth opportunities
+
+⸻
+
+💳 Fintech Payment Platform
+
+A high-volume payment platform focused on scalability, performance, and customer experience.
+
+Focus:
+
+* Payments
+* Frontend architecture
+* Microfrontends
+* Financial operations
+
+⸻
+
+🎓 Education & Certifications
+
+* 🎓 MSc in Applied Artificial Intelligence
+* 🏆 Professional Scrum Product Owner™ I (PSPO I)
+* ☁️ Microsoft Azure Fundamentals
+* 📊 Data Science
+* 📈 Data Visualization
+* 🤖 Artificial Intelligence & Machine Learning
+* 📋 Scrum Fundamentals
+
+⸻
+
+🌱 Currently Learning
+
+* AI Product Management
+* AI Agents
+* Digital Transformation
+* Product Analytics
+* Growth
+* Experimentation
+* Engineering Management
+* Business Strategy
+
+⸻
+
+📊 GitHub Analytics
+
+<div align="center">
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=eddieelorza&show_icons=true&theme=transparent&hide_border=true" />
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eddieelorza&layout=compact&theme=transparent&hide_border=true" />
+</div>
+
+⸻
+
+🌎 Connect With Me
+
+<div align="center">
 
 📍 Mexico City, Mexico
 
-✉️ edd.elorza@gmail.com
+🌐 Portfolio → https://eddieelorza.com
 
----
+💼 LinkedIn → https://www.linkedin.com/in/eddie-elorza/
 
-## 🎯 Areas of Expertise
-
-### Product
-
-- Product Discovery
-- Product Strategy
-- Roadmapping
-- Prioritization
-- Stakeholder Management
-- KPI Definition & Tracking
-- Product Analytics
-- User-Centered Design
-
-### AI & Automation
-
-- Applied Artificial Intelligence
-- Agentic Workflows
-- Process Automation
-- LLM Integrations
-- AI-Powered Products
-- Intelligent Systems
-
-### Engineering
-
-- Frontend Architecture
-- Microfrontends
-- System Design
-- API Integrations
-- High-Traffic Platforms
-- Scalable Web Applications
-
-### Data & Analytics
-
-- Product Metrics
-- Dashboards & Reporting
-- Root Cause Analysis
-- Data Visualization
-- Operational Analytics
-- Decision Intelligence
-
----
-
-## ⚙️ Core Technologies
-
-### Frontend
-
-React
-TypeScript
-JavaScript
-Vue
-TailwindCSS
-Webpack
-
-### AI & Data
-
-Python
-Pandas
-NumPy
-scikit-learn
-
-### Infrastructure
-
-Docker
-AWS
-Azure
-Jenkins
-
-### Product & Collaboration
-
-Jira
-Confluence
-Notion
-Figma
-
----
-
-## 💼 Selected Experience
-
-### Product Engineer | Tech Lead
-Banco Azteca / Grupo Salinas
-
-- Led product and technical initiatives for a high-volume payment platform
-- Coordinated migration toward a microfrontend architecture
-- Partnered with product, business, UX and engineering stakeholders
-- Built AI-powered automations for operational and payment workflows
-- Contributed to scalable systems supporting fintech operations at scale
-
-### Frontend Engineer
-
-- Developed and scaled customer-facing applications used by thousands of users
-- Designed reusable architectures and frontend platforms
-- Collaborated closely with product teams to improve customer experiences
-- Focused on performance, maintainability and business outcomes
-
----
-
-## 🏆 Education & Certifications
-
-🎓 MSc in Applied Artificial Intelligence
-
-🏆 Professional Scrum Product Owner™ I (PSPO I)
-
-🤖 Advanced Certificate in Artificial Intelligence & Machine Learning
-
-📊 Advanced Certificate in Data Science
-
-📈 Advanced Certificate in Data Visualization
-
-☁️ Microsoft Azure Fundamentals
-
-📋 Scrum Fundamentals Certification
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=eddieelorza&show_icons=true&theme=transparent&hide_border=true&title_color=ff8c42&icon_color=ff8c42&text_color=ffffff" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eddieelorza&layout=compact&theme=transparent&hide_border=true&title_color=ff8c42&text_color=ffffff" />
+✉️ Email → edd.elorza@gmail.com
 
 </div>
 
----
-
-## 🎯 Current Focus
-
-- Product Engineering
-- AI Product Management
-- Intelligent Automation
-- Product Analytics
-- Payment Infrastructure
-- Fintech Platforms
-- Scalable Digital Products
-
----
-
-## 🌐 Portfolio
+⸻
 
 <div align="center">
 
-### → https://eddieelorza.com
+⚡ Building the next generation of AI-powered products through engineering, product strategy, and digital transformation.
 
 </div>
-
----
-
-<div align="center">
-
-### ⚡ Bridging product thinking, engineering execution, and AI to build scalable digital products.
-
-</div>
-
----
-
-<div align="center">
-
-￼
-
-</di>
