@@ -246,12 +246,11 @@ Focus:
 
 ⸻
 
-📊 GitHub Analytics
+## 📊 GitHub Activity
 
-<div align="center">
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=eddieelorza&show_icons=true&theme=transparent&hide_border=true" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eddieelorza&layout=compact&theme=transparent&hide_border=true" />
-</div>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=eddieelorza&theme=github_dark" />
+</p>
 
 ⸻
 
