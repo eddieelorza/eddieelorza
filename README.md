@@ -6,7 +6,19 @@ Building AI-powered products that connect engineering, product, data, and busine
 
 <div align="center">
 
-LinkedIn • Portfolio • Email
+<p align="center">
+  <a href="https://www.linkedin.com/in/eddie-elorza/">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin">
+  </a>
+
+  <a href="https://eddieelorza.com/">
+    <img src="https://img.shields.io/badge/Portfolio-Website-black?logo=google-chrome">
+  </a>
+
+  <a href="mailto:edd.elorza@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?logo=gmail">
+  </a>
+</p>
 
 </div>
 
