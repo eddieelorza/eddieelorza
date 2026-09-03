@@ -15,10 +15,12 @@ Si no existe: créalo público, marca "Add a README file". Si ya existe, solo co
 ```
 README.md
 assets/                 ← 8 SVG animados (dark + light)
-scripts/build_assets.py ← generador (los SVG salen de aquí)
+scripts/build_assets.py ← generador de assets decorativos
+scripts/build_stats.py  ← generador de las tarjetas de stats (API de GitHub)
 scripts/personalize.sh
 .github/workflows/snake.yml
 .github/workflows/build-assets.yml
+.github/workflows/build-stats.yml
 ```
 
 ## 2. Pon tu usuario
@@ -142,3 +144,39 @@ Y en el README: `<img src="./assets/metrics.svg" width="100%">`.
 - [ ] Abre tu perfil en tema claro **y** oscuro y verifica el hero
 - [ ] Ábrelo en móvil: el hero es `width="100%"`, debe escalar sin cortarse
 - [ ] Los links (portfolio, LinkedIn, mail) apuntan a donde deben
+
+
+---
+
+## Las tarjetas de stats son propias
+
+La sección `06 — GitHub` no depende de ningún servicio externo. `scripts/build_stats.py`
+consulta la GraphQL API de GitHub y escribe seis SVG en `assets/`:
+
+| Asset | Qué muestra |
+|---|---|
+| `stats-{dark,light}.svg` | contribuciones de por vida, PRs, repos, stars, rachas |
+| `langs-{dark,light}.svg` | top 6 lenguajes por bytes, con los colores oficiales de GitHub |
+| `activity-{dark,light}.svg` | heatmap semanal, una fila por año desde que abriste la cuenta |
+
+```bash
+GITHUB_TOKEN=$(gh auth token) python3 scripts/build_stats.py tu-usuario
+```
+
+El workflow `build-stats.yml` lo corre a diario y commitea solo si algo cambió.
+
+> **Por qué no `github-readme-stats`**: las instancias públicas de esos proyectos
+> corren en cuentas gratuitas de Vercel y se quedan sin cuota con frecuencia
+> (`503 DEPLOYMENT_PAUSED`, `402 Payment required`). Un README que se ve roto la
+> mitad del año es peor que uno sin gráficas.
+
+### Contribuciones privadas
+
+Por defecto las gráficas solo cuentan actividad **pública**. Si tu trabajo real vive
+en repos privados, los números salen artificialmente bajos.
+
+1. Actívalas en tu perfil: [github.com/settings/profile](https://github.com/settings/profile)
+   → **Contributions** → *Include private contributions on my profile*.
+2. Para que el workflow también las vea, crea un PAT clásico con scope `read:user`
+   y guárdalo como secret `PROFILE_TOKEN` en el repo. Sin él, Actions usa el
+   `GITHUB_TOKEN` por defecto, que solo ve lo público.

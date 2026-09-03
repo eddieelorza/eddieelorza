@@ -239,18 +239,26 @@ Financial platforms where reliability, scale, security and customer experience a
 
 <div align="center">
 
-<img height="160" alt="Stats" src="https://github-readme-stats.vercel.app/api?username=eddieelorza&show_icons=true&hide_border=true&hide_title=true&bg_color=00000000&icon_color=22D3EE&text_color=8A97B1&ring_color=8B5CF6&include_all_commits=true">
-<img height="160" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eddieelorza&layout=compact&hide_border=true&hide_title=true&bg_color=00000000&text_color=8A97B1&langs_count=8">
-
-<br>
-
-<img height="160" alt="Streak" src="https://streak-stats.demolab.com?user=eddieelorza&hide_border=true&background=00000000&stroke=8B5CF622&ring=8B5CF6&fire=E879F9&currStreakLabel=22D3EE&sideLabels=8A97B1&dates=8A97B1&currStreakNum=8A97B1&sideNums=8A97B1">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg">
+  <img alt="GitHub stats" src="./assets/stats-dark.svg" width="49%">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/langs-light.svg">
+  <img alt="Most used languages" src="./assets/langs-dark.svg" width="49%">
+</picture>
 
 <br><br>
 
-<img alt="Contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=eddieelorza&bg_color=00000000&color=8A97B1&line=8B5CF6&point=22D3EE&area=true&area_color=8B5CF6&hide_border=true&custom_title=Contribution%20activity">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
+  <img alt="Contribution activity" src="./assets/activity-dark.svg" width="100%">
+</picture>
 
-<br>
+<br><br>
 
 <!-- Snake generado por .github/workflows/snake.yml (rama `output`) -->
 <picture>
@@ -280,6 +288,6 @@ Open to conversations about AI product roles, architecture work, and automation 
 
 <br><br>
 
-<sub><code>Mexico City, MX</code> · <code>built with hand-rolled animated SVG, not badge soup</code></sub>
+<sub><code>Mexico City, MX</code> · <code>stats &amp; graphs generated from the GitHub API, not third-party badge services</code></sub>
 
 </div>
