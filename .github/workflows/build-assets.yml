@@ -1,0 +1,45 @@
+name: Rebuild SVG assets
+
+# Regenera assets/*.svg cuando cambies los design tokens en el script.
+# Asi nunca editas SVG a mano.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_assets.py"
+      - ".github/workflows/build-assets.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build assets
+        run: python3 scripts/build_assets.py
+
+      - name: Validate SVG is well-formed XML
+        run: |
+          python3 - <<'PY'
+          import glob, sys, xml.dom.minidom
+          for f in sorted(glob.glob("assets/*.svg")):
+              xml.dom.minidom.parse(f)
+              print("ok", f)
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --staged --quiet || git commit -m "chore(assets): rebuild animated SVGs"
+          git push
