@@ -240,22 +240,22 @@ Financial platforms where reliability, scale, security and customer experience a
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/stats-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg">
-  <img alt="GitHub stats" src="./assets/stats-dark.svg" width="49%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/stats-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg?v=2">
+  <img alt="GitHub stats" src="./assets/stats-dark.svg?v=2" width="49%">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/langs-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/langs-light.svg">
-  <img alt="Most used languages" src="./assets/langs-dark.svg" width="49%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/langs-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/langs-light.svg?v=2">
+  <img alt="Most used languages" src="./assets/langs-dark.svg?v=2" width="49%">
 </picture>
 
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img alt="Contribution activity" src="./assets/activity-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/activity-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg?v=2">
+  <img alt="Contribution activity" src="./assets/activity-dark.svg?v=2" width="100%">
 </picture>
 
 <br><br>

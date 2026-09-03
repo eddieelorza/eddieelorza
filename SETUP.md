@@ -170,13 +170,28 @@ El workflow `build-stats.yml` lo corre a diario y commitea solo si algo cambió.
 > (`503 DEPLOYMENT_PAUSED`, `402 Payment required`). Un README que se ve roto la
 > mitad del año es peor que uno sin gráficas.
 
-### Contribuciones privadas
+### Contribuciones privadas y el secret `PROFILE_TOKEN`
 
-Por defecto las gráficas solo cuentan actividad **pública**. Si tu trabajo real vive
-en repos privados, los números salen artificialmente bajos.
+Un PAT propio ve tu actividad en repos privados; el `GITHUB_TOKEN` de Actions no.
+La diferencia no es menor: en este perfil son **1,214 contribuciones contra 699**,
+172 PRs contra 60.
 
-1. Actívalas en tu perfil: [github.com/settings/profile](https://github.com/settings/profile)
-   → **Contributions** → *Include private contributions on my profile*.
-2. Para que el workflow también las vea, crea un PAT clásico con scope `read:user`
-   y guárdalo como secret `PROFILE_TOKEN` en el repo. Sin él, Actions usa el
-   `GITHUB_TOKEN` por defecto, que solo ve lo público.
+Por eso el workflow **no corre sin `PROFILE_TOKEN`** — se salta el refresco con un
+notice en vez de sobrescribir las tarjetas con números peores.
+
+1. Crea un PAT clásico en [github.com/settings/tokens](https://github.com/settings/tokens)
+   con scope `read:user` (añade `repo` para contar repos privados).
+2. Guárdalo en **Settings → Secrets and variables → Actions** del repo como `PROFILE_TOKEN`.
+
+### El candado anti-glitch
+
+El API de GitHub a veces devuelve la actividad privada y a veces no, en consultas
+idénticas con minutos de diferencia. Como las contribuciones acumuladas nunca bajan,
+`build_stats.py` guarda la última corrida buena en `assets/.stats.json` y **se niega a
+regenerar** si `lifetime`, `prs` o `repos` caen más de 10%. Un glitch del API no
+puede degradar tu README.
+
+### Caché de camo
+
+GitHub cachea las imágenes del README de forma agresiva. Si cambias un SVG y no ves
+la diferencia, sube el número de versión en el README (`?v=2` → `?v=3`).

@@ -227,7 +227,7 @@ def stats_card(t: dict, d: dict) -> str:
     W, H = 600, 190
     metrics = [
         (human(d["lifetime"]), "contributions", f"since {d['since']}"),
-        (human(d["prs"]), "pull requests", "merged &amp; open"),
+        (human(d["prs"]), "pull requests", "merged & open"),
         (human(d["repos"]), "repositories", f"{human(d['stars'])} stars"),
     ]
     sub = [
@@ -461,10 +461,43 @@ def activity_card(theme: str, t: dict, d: dict) -> str:
 
 
 # ---------------------------------------------------------------- build
+STATE = OUT / ".stats.json"
+
+# Las contribuciones acumuladas nunca bajan. Si el API devuelve mucho menos
+# que la ultima corrida buena es un glitch suyo (pasa: alterna entre contar
+# y no contar la actividad privada), no una realidad que debamos publicar.
+REGRESSION_FLOOR = 0.90
+
+
+def guard(d: dict) -> bool:
+    prev = {}
+    if STATE.exists():
+        try:
+            prev = json.loads(STATE.read_text())
+        except json.JSONDecodeError:
+            prev = {}
+
+    for key in ("lifetime", "prs", "repos"):
+        old = prev.get(key)
+        if old and d[key] < old * REGRESSION_FLOOR:
+            print(f"  ! {key}: {d[key]} < {old} (ultima corrida buena). "
+                  f"El API devolvio datos incompletos; no se regenera nada.")
+            return False
+
+    STATE.write_text(json.dumps(
+        {k: d[k] for k in ("lifetime", "year_total", "private", "prs",
+                           "repos", "stars", "followers", "active_days")},
+        indent=2) + "\n", encoding="utf-8")
+    return True
+
+
 if __name__ == "__main__":
     data = collect(USER)
     print(f"  {USER}: {data['lifetime']:,} lifetime · {data['year_total']} past year "
           f"· {data['repos']} repos · {data['stars']} stars")
+
+    if not guard(data):
+        sys.exit(0)
 
     builders = {
         "stats": lambda th, tk: stats_card(tk, data),
