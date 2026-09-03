@@ -21,25 +21,46 @@ concurrency:
   group: stats
   cancel-in-progress: true
 
+env:
+  # PAT clasico con scope read:user (anade repo para contar contribuciones
+  # en repos privados). Guardalo en Settings -> Secrets and variables -> Actions.
+  PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # El GITHUB_TOKEN de Actions ve menos que un PAT propio: reporta menos
+      # PRs, menos repos y cero contribuciones privadas. Regenerar con el
+      # *empeora* las tarjetas ya publicadas, asi que preferimos no tocarlas.
+      - name: Check token
+        id: gate
+        run: |
+          if [ -z "$PROFILE_TOKEN" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Sin PROFILE_TOKEN: se conservan las tarjetas actuales." \
+                 "Crea un PAT (scope read:user) en https://github.com/settings/tokens" \
+                 "y guardalo como secret PROFILE_TOKEN para activar el refresco diario."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
 
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
         with:
           python-version: "3.12"
 
       - name: Build stat cards
+        if: steps.gate.outputs.run == 'true'
         env:
-          # PROFILE_TOKEN (PAT clasico, scope read:user) incluye las
-          # contribuciones en repos privados. Sin el, cae al token de
-          # Actions, que solo ve actividad publica.
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
         run: python3 scripts/build_stats.py "${{ github.repository_owner }}"
 
       - name: Validate SVG is well-formed XML
+        if: steps.gate.outputs.run == 'true'
         run: |
           python3 - <<'PY'
           import glob, xml.dom.minidom
@@ -49,6 +70,7 @@ jobs:
           PY
 
       - name: Commit if changed
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
