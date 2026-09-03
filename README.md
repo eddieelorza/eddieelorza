@@ -144,8 +144,17 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 
 <sub>**PRODUCT &amp; DESIGN**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=figma,notion&theme=dark">
-  <img alt="Figma, Notion" src="https://skillicons.dev/icons?i=figma,notion&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=figma,notion,obsidian&theme=dark">
+  <img alt="Figma, Notion, Obsidian" src="https://skillicons.dev/icons?i=figma,notion,obsidian&theme=light">
+</picture>
+
+<br><br>
+
+<sub>**AI TOOLING**</sub><br><br>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=1">
+  <img alt="Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills" src="./assets/tooling-dark.svg?v=1">
 </picture>
 
 <br><br>

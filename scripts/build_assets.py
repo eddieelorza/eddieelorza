@@ -348,6 +348,68 @@ def focus(t: dict) -> str:
 """
 
 
+# ---------------------------------------------------------------- TOOLING
+# Chips tipograficos: skillicons.dev no tiene iconos para Claude, Cursor,
+# Warp ni Ollama (devuelve un placeholder "?"), y dibujar logos de marca a
+# mano seria impreciso. El texto envejece mejor.
+TOOLING = [
+    ("DAILY DRIVERS", ["Claude Code", "Cursor", "Warp", "Obsidian", "Ollama"]),
+    ("AGENTIC LAYER", ["LLM agents", "MCP servers", "Skills", "Local inference"]),
+]
+
+# Ancho aproximado de un caracter a 13.5px en el stack de UI.
+_CH = 7.45
+
+
+def tooling(t: dict) -> str:
+    pad, top = 30, 36
+    rowh, gap = 54, 9
+    idp = "t_"
+    H = top + rowh * len(TOOLING) + 6
+
+    # La tarjeta se ajusta al contenido: sobrarle 500px de fondo vacio se ve
+    # como un bug de layout, no como aire.
+    def row_w(items):
+        return sum(len(n) * _CH + 30 for n in items) + gap * (len(items) - 1)
+
+    W = int(max(row_w(items) for _, items in TOOLING) + pad * 2)
+
+    groups = []
+    for gi, (label, items) in enumerate(TOOLING):
+        y = top + rowh * gi
+        groups.append(
+            f'<text x="{pad}" y="{y + 4}" font-family="@MONO@" font-size="10" font-weight="700" '
+            f'fill="@MUTED@" letter-spacing="2">{label}</text>'
+        )
+        x = pad
+        for ii, name in enumerate(items):
+            w = len(name) * _CH + 30
+            d = 0.14 + gi * 0.20 + ii * 0.07
+            accent = ["@VIOLET@", "@BLUE@", "@CYAN@", "@MAGENTA@"][ii % 4]
+            groups.append(f"""
+    <g class="p" style="animation-delay:{d:.2f}s">
+      <rect x="{x:.0f}" y="{y + 12}" width="{w:.0f}" height="26" rx="13"
+            fill="@SURFACE@" stroke="@FAINT@"/>
+      <circle cx="{x + 15:.0f}" cy="{y + 25}" r="3.5" fill="{accent}"/>
+      <text x="{x + 26:.0f}" y="{y + 29}" font-family="@FONT@" font-size="13.5"
+            font-weight="500" fill="@TEXT@">{name}</text>
+    </g>""")
+            x += w + gap
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"
+     role="img" aria-label="AI tooling: Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills">
+{base_defs(idp)}
+  <style>
+    .p {{ opacity:0; animation: t_pop .5s cubic-bezier(.2,.7,.3,1) forwards; }}
+    @keyframes t_pop {{ from {{opacity:0; transform:translateY(7px);}} to {{opacity:1; transform:none;}} }}
+  </style>
+  <rect width="{W}" height="{H}" rx="14" fill="@BG2@"/>
+  <rect width="{W}" height="{H}" rx="14" fill="url(#{idp}grid)"/>
+  {''.join(groups)}
+</svg>
+"""
+
+
 # ---------------------------------------------------------------- DIVIDER
 def divider(t: dict) -> str:
     W, H = 1200, 6
@@ -369,7 +431,8 @@ def divider(t: dict) -> str:
 
 
 # ---------------------------------------------------------------- build
-BUILDERS = {"hero": hero, "pipeline": pipeline, "focus": focus, "divider": divider}
+BUILDERS = {"hero": hero, "pipeline": pipeline, "focus": focus,
+            "tooling": tooling, "divider": divider}
 
 if __name__ == "__main__":
     for name, fn in BUILDERS.items():

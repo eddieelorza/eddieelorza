@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 150" width="519" height="150"
+     role="img" aria-label="AI tooling: Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills">
+
+  <defs>
+    <linearGradient id="t_brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8B5CF6"/>
+      <stop offset="45%"  stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <!-- gradiente que se desplaza: da el "shimmer" del titulo -->
+    <linearGradient id="t_shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8B5CF6"/>
+      <stop offset="30%"  stop-color="#3B82F6"/>
+      <stop offset="55%"  stop-color="#22D3EE"/>
+      <stop offset="80%"  stop-color="#E879F9"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-1 0; 1 0; -1 0" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="t_b1"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="t_b2"><stop offset="0%" stop-color="#22D3EE"   stop-opacity="1"/><stop offset="100%" stop-color="#22D3EE"   stop-opacity="0"/></radialGradient>
+    <radialGradient id="t_b3"><stop offset="0%" stop-color="#E879F9" stop-opacity="1"/><stop offset="100%" stop-color="#E879F9" stop-opacity="0"/></radialGradient>
+
+    <filter id="t_soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+    <filter id="t_glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <pattern id="t_grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style>
+    .p { opacity:0; animation: t_pop .5s cubic-bezier(.2,.7,.3,1) forwards; }
+    @keyframes t_pop { from {opacity:0; transform:translateY(7px);} to {opacity:1; transform:none;} }
+  </style>
+  <rect width="519" height="150" rx="14" fill="#0D1220"/>
+  <rect width="519" height="150" rx="14" fill="url(#t_grid)"/>
+  <text x="30" y="40" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">DAILY DRIVERS</text>
+    <g class="p" style="animation-delay:0.14s">
+      <rect x="30" y="48" width="112" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="45" cy="61" r="3.5" fill="#8B5CF6"/>
+      <text x="56" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Claude Code</text>
+    </g>
+    <g class="p" style="animation-delay:0.21s">
+      <rect x="151" y="48" width="75" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="166" cy="61" r="3.5" fill="#3B82F6"/>
+      <text x="177" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Cursor</text>
+    </g>
+    <g class="p" style="animation-delay:0.28s">
+      <rect x="235" y="48" width="60" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="250" cy="61" r="3.5" fill="#22D3EE"/>
+      <text x="261" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Warp</text>
+    </g>
+    <g class="p" style="animation-delay:0.35s">
+      <rect x="303" y="48" width="90" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="318" cy="61" r="3.5" fill="#E879F9"/>
+      <text x="329" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Obsidian</text>
+    </g>
+    <g class="p" style="animation-delay:0.42s">
+      <rect x="402" y="48" width="75" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="417" cy="61" r="3.5" fill="#8B5CF6"/>
+      <text x="428" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Ollama</text>
+    </g><text x="30" y="94" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">AGENTIC LAYER</text>
+    <g class="p" style="animation-delay:0.34s">
+      <rect x="30" y="102" width="104" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="45" cy="115" r="3.5" fill="#8B5CF6"/>
+      <text x="56" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">LLM agents</text>
+    </g>
+    <g class="p" style="animation-delay:0.41s">
+      <rect x="144" y="102" width="112" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="158" cy="115" r="3.5" fill="#3B82F6"/>
+      <text x="170" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">MCP servers</text>
+    </g>
+    <g class="p" style="animation-delay:0.48s">
+      <rect x="264" y="102" width="75" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="279" cy="115" r="3.5" fill="#22D3EE"/>
+      <text x="290" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Skills</text>
+    </g>
+    <g class="p" style="animation-delay:0.55s">
+      <rect x="348" y="102" width="142" height="26" rx="13"
+            fill="#131A2B" stroke="#2A3346"/>
+      <circle cx="363" cy="115" r="3.5" fill="#E879F9"/>
+      <text x="374" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Local inference</text>
+    </g>
+</svg>
