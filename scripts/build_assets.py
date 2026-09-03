@@ -353,12 +353,38 @@ def focus(t: dict) -> str:
 # Warp ni Ollama (devuelve un placeholder "?"), y dibujar logos de marca a
 # mano seria impreciso. El texto envejece mejor.
 TOOLING = [
-    ("DAILY DRIVERS", ["Claude Code", "Cursor", "Warp", "Obsidian", "Ollama"]),
-    ("AGENTIC LAYER", ["LLM agents", "MCP servers", "Skills", "Local inference"]),
+    ("AI TOOLING",    ["Claude Code", "Cursor", "Warp", "Ollama", "LLM orchestration"]),
+    ("AGENTIC LAYER", ["LLM agents", "MCP servers", "Skills", "Vector search", "RAG"]),
+    ("ARCHITECTURE",  ["Module Federation", "Microfrontends", "n8n"]),
+    ("OBSERVABILITY", ["Dynatrace", "Elastic APM", "Core Web Vitals", "Event tracking"]),
+    ("PRODUCT OPS",   ["Jira", "Miro", "A/B testing"]),
 ]
 
-# Ancho aproximado de un caracter a 13.5px en el stack de UI.
-_CH = 7.45
+# No hay forma de medir texto sin las metricas de la fuente, y estirar el
+# glifo con textLength deforma las palabras cortas ("S k i l l s"). Esta
+# tabla aproxima el ancho por caracter en ems para un sans de UI: basta
+# para que ningun chip se desborde y las proporciones se vean naturales.
+_NARROW = "iljItfr.,;:'!|()[]-  "
+_WIDE = "MWmw"
+_EM = 13.5
+# 26px hasta donde arranca el texto (punto + inset) + 16px de aire derecho.
+PILL_PAD = 42
+
+
+def text_w(s: str) -> float:
+    w = 0.0
+    for c in s:
+        if c == " ":
+            w += 0.28
+        elif c in _NARROW:
+            w += 0.31
+        elif c in _WIDE:
+            w += 0.86
+        elif c.isupper() or c.isdigit():
+            w += 0.63
+        else:
+            w += 0.545
+    return w * _EM
 
 
 def tooling(t: dict) -> str:
@@ -370,7 +396,7 @@ def tooling(t: dict) -> str:
     # La tarjeta se ajusta al contenido: sobrarle 500px de fondo vacio se ve
     # como un bug de layout, no como aire.
     def row_w(items):
-        return sum(len(n) * _CH + 30 for n in items) + gap * (len(items) - 1)
+        return sum(text_w(n) + PILL_PAD for n in items) + gap * (len(items) - 1)
 
     W = int(max(row_w(items) for _, items in TOOLING) + pad * 2)
 
@@ -383,7 +409,7 @@ def tooling(t: dict) -> str:
         )
         x = pad
         for ii, name in enumerate(items):
-            w = len(name) * _CH + 30
+            w = text_w(name) + PILL_PAD
             d = 0.14 + gi * 0.20 + ii * 0.07
             accent = ["@VIOLET@", "@BLUE@", "@CYAN@", "@MAGENTA@"][ii % 4]
             groups.append(f"""

@@ -126,20 +126,26 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 
 <sub>**FRONTEND**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=react,ts,js,nextjs,vue,tailwind,vite&theme=dark">
-  <img alt="React, TypeScript, JavaScript, Next.js, Vue, Tailwind, Vite" src="https://skillicons.dev/icons?i=react,ts,js,nextjs,vue,tailwind,vite&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=react,ts,js,html,sass,tailwind,nextjs,vue,vite,webpack&theme=dark">
+  <img alt="React, TypeScript, JavaScript, HTML, Sass, Tailwind, Next.js, Vue, Vite, Webpack" src="https://skillicons.dev/icons?i=react,ts,js,html,sass,tailwind,nextjs,vue,vite,webpack&theme=light">
 </picture>
 
-<sub>**AI &amp; DATA**</sub><br>
+<sub>**BACKEND &amp; DATA**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,postgres,supabase&theme=dark">
-  <img alt="Python, PyTorch, scikit-learn, FastAPI, Postgres, Supabase" src="https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,postgres,supabase&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=python,fastapi,postgres,mysql,supabase,firebase,elasticsearch&theme=dark">
+  <img alt="Python, FastAPI, PostgreSQL, MySQL, Supabase, Firebase, Elasticsearch" src="https://skillicons.dev/icons?i=python,fastapi,postgres,mysql,supabase,firebase,elasticsearch&theme=light">
 </picture>
 
-<sub>**PLATFORM**</sub><br>
+<sub>**PLATFORM &amp; OPS**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=docker,azure,aws,jenkins,git,githubactions&theme=dark">
-  <img alt="Docker, Azure, AWS, Jenkins, Git, GitHub Actions" src="https://skillicons.dev/icons?i=docker,azure,aws,jenkins,git,githubactions&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=docker,kubernetes,azure,aws,jenkins,githubactions,git,postman&theme=dark">
+  <img alt="Docker, Kubernetes, Azure, AWS, Jenkins, GitHub Actions, Git, Postman" src="https://skillicons.dev/icons?i=docker,kubernetes,azure,aws,jenkins,githubactions,git,postman&theme=light">
+</picture>
+
+<sub>**AI &amp; ML**</sub><br>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=pytorch,sklearn&theme=dark">
+  <img alt="PyTorch, scikit-learn" src="https://skillicons.dev/icons?i=pytorch,sklearn&theme=light">
 </picture>
 
 <sub>**PRODUCT &amp; DESIGN**</sub><br>
@@ -148,18 +154,14 @@ I take a business problem and carry it all the way to a measurable outcome: disc
   <img alt="Figma, Notion, Obsidian" src="https://skillicons.dev/icons?i=figma,notion,obsidian&theme=light">
 </picture>
 
-<br><br>
-
-<sub>**AI TOOLING**</sub><br><br>
+<sub>**TOOLING &amp; PRACTICES**</sub><br><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=1">
-  <img alt="Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills" src="./assets/tooling-dark.svg?v=1">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=2">
+  <img alt="Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills" src="./assets/tooling-dark.svg?v=2">
 </picture>
 
 <br><br>
-
-`Microfrontends` · `LLM orchestration` · `n8n` · `Vector search` · `Event tracking` · `A/B testing`
 
 </div>
 
