@@ -158,7 +158,7 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=2">
   <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=2">
-  <img alt="Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills" src="./assets/tooling-dark.svg?v=2">
+  <img alt="AI TOOLING: Claude Code, Cursor, Warp, Ollama, LLM orchestration · AGENTIC LAYER: LLM agents, MCP servers, Skills, Vector search, RAG · ARCHITECTURE: Module Federation, Microfrontends, n8n · OBSERVABILITY: Dynatrace, Elastic APM, Core Web Vitals, Event tracking · PRODUCT OPS: Jira, Miro, A/B testing" src="./assets/tooling-dark.svg?v=2">
 </picture>
 
 <br><br>

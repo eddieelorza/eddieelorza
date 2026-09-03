@@ -399,6 +399,7 @@ def tooling(t: dict) -> str:
         return sum(text_w(n) + PILL_PAD for n in items) + gap * (len(items) - 1)
 
     W = int(max(row_w(items) for _, items in TOOLING) + pad * 2)
+    aria = " · ".join(f"{g}: " + ", ".join(i) for g, i in TOOLING)
 
     groups = []
     for gi, (label, items) in enumerate(TOOLING):
@@ -423,7 +424,7 @@ def tooling(t: dict) -> str:
             x += w + gap
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"
-     role="img" aria-label="AI tooling: Claude Code, Cursor, Warp, Obsidian, Ollama, LLM agents, MCP servers, Skills">
+     role="img" aria-label="{aria}">
 {base_defs(idp)}
   <style>
     .p {{ opacity:0; animation: t_pop .5s cubic-bezier(.2,.7,.3,1) forwards; }}
