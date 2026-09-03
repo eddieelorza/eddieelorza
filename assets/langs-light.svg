@@ -22,43 +22,43 @@
 
   <g clip-path="url(#lg_clip)">
     <rect x="46" y="70" width="508" height="12" fill="#FFFFFF"/>
-    <rect x="46.0" y="70" width="227.3" height="12" fill="#3178c6"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.10s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.10s" fill="freeze"/></rect><rect x="273.3" y="70" width="80.9" height="12" fill="#DA5B0B"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.17s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.17s" fill="freeze"/></rect><rect x="354.2" y="70" width="74.3" height="12" fill="#336790"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.24s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.24s" fill="freeze"/></rect><rect x="428.5" y="70" width="55.2" height="12" fill="#f1e05a"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.31s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.31s" fill="freeze"/></rect><rect x="483.6" y="70" width="32.1" height="12" fill="#e34c26"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.38s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.38s" fill="freeze"/></rect><rect x="515.7" y="70" width="16.7" height="12" fill="#663399"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.45s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.45s" fill="freeze"/></rect><rect x="532.4" y="70" width="21.6" height="12" fill="#D3DAE8"/>
+    <rect x="46.0" y="70" width="211.3" height="12" fill="#DA5B0B"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.10s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.10s" fill="freeze"/></rect><rect x="257.3" y="70" width="130.5" height="12" fill="#f1e05a"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.17s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.17s" fill="freeze"/></rect><rect x="387.8" y="70" width="78.2" height="12" fill="#e34c26"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.24s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.24s" fill="freeze"/></rect><rect x="466.1" y="70" width="32.1" height="12" fill="#663399"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.31s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.31s" fill="freeze"/></rect><rect x="498.2" y="70" width="28.5" height="12" fill="#c6538c"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.38s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.38s" fill="freeze"/></rect><rect x="526.7" y="70" width="24.5" height="12" fill="#3572A5"><animate attributeName="height" from="0" to="12" dur=".5s" begin="0.45s" fill="freeze"/><animate attributeName="y" from="82" to="70" dur=".5s" begin="0.45s" fill="freeze"/></rect><rect x="551.2" y="70" width="2.8" height="12" fill="#D3DAE8"/>
   </g>
   
   <g class="l" style="animation-delay:0.28s">
-    <circle cx="51" cy="112" r="5" fill="#3178c6"/>
-    <text x="64" y="116" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">TypeScript</text>
+    <circle cx="51" cy="112" r="5" fill="#DA5B0B"/>
+    <text x="64" y="116" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">Jupyter Notebook</text>
     <text x="278" y="116" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
-          font-weight="700" fill="#5B6478">44.7%</text>
+          font-weight="700" fill="#5B6478">41.6%</text>
   </g>
   <g class="l" style="animation-delay:0.35s">
-    <circle cx="313" cy="112" r="5" fill="#DA5B0B"/>
-    <text x="326" y="116" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">Jupyter Notebook</text>
+    <circle cx="313" cy="112" r="5" fill="#f1e05a"/>
+    <text x="326" y="116" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">JavaScript</text>
     <text x="540" y="116" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
-          font-weight="700" fill="#5B6478">15.9%</text>
+          font-weight="700" fill="#5B6478">25.7%</text>
   </g>
   <g class="l" style="animation-delay:0.42s">
-    <circle cx="51" cy="137" r="5" fill="#336790"/>
-    <text x="64" y="141" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">PLpgSQL</text>
+    <circle cx="51" cy="137" r="5" fill="#e34c26"/>
+    <text x="64" y="141" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">HTML</text>
     <text x="278" y="141" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
-          font-weight="700" fill="#5B6478">14.6%</text>
+          font-weight="700" fill="#5B6478">15.4%</text>
   </g>
   <g class="l" style="animation-delay:0.49s">
-    <circle cx="313" cy="137" r="5" fill="#f1e05a"/>
-    <text x="326" y="141" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">JavaScript</text>
+    <circle cx="313" cy="137" r="5" fill="#663399"/>
+    <text x="326" y="141" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">CSS</text>
     <text x="540" y="141" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
-          font-weight="700" fill="#5B6478">10.9%</text>
-  </g>
-  <g class="l" style="animation-delay:0.56s">
-    <circle cx="51" cy="162" r="5" fill="#e34c26"/>
-    <text x="64" y="166" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">HTML</text>
-    <text x="278" y="166" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
           font-weight="700" fill="#5B6478">6.3%</text>
   </g>
+  <g class="l" style="animation-delay:0.56s">
+    <circle cx="51" cy="162" r="5" fill="#c6538c"/>
+    <text x="64" y="166" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">SCSS</text>
+    <text x="278" y="166" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
+          font-weight="700" fill="#5B6478">5.6%</text>
+  </g>
   <g class="l" style="animation-delay:0.63s">
-    <circle cx="313" cy="162" r="5" fill="#663399"/>
-    <text x="326" y="166" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">CSS</text>
+    <circle cx="313" cy="162" r="5" fill="#3572A5"/>
+    <text x="326" y="166" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#0A0E1A">Python</text>
     <text x="540" y="166" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5"
-          font-weight="700" fill="#5B6478">3.3%</text>
+          font-weight="700" fill="#5B6478">4.8%</text>
   </g>
 </svg>
