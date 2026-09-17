@@ -51,7 +51,7 @@ I design and build products end to end: from the business problem to the archite
 ## Stack
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=react,ts,vue,vite,tailwind,python,fastapi,java,postgres,supabase,docker,azure,vercel,githubactions,figma&theme=dark">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=react%2Cts%2Cvue%2Cvite%2Ctailwind%2Cpython%2Cfastapi%2Cjava%2Cpostgres%2Csupabase%2Cdocker%2Cazure%2Cvercel%2Cgithubactions%2Cfigma&theme=dark">
   <img alt="React, TypeScript, Vue, Vite, Tailwind, Python, FastAPI, Java, PostgreSQL, Supabase, Docker, Azure, Vercel, GitHub Actions, Figma" src="https://skillicons.dev/icons?i=react,ts,vue,vite,tailwind,python,fastapi,java,postgres,supabase,docker,azure,vercel,githubactions,figma&theme=light">
 </picture>
 
