@@ -4,25 +4,25 @@
 
   <defs>
     <linearGradient id="p_brand" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#8B5CF6"/>
-      <stop offset="45%"  stop-color="#3B82F6"/>
-      <stop offset="100%" stop-color="#22D3EE"/>
+      <stop offset="0%"   stop-color="#7D8CFF"/>
+      <stop offset="45%"  stop-color="#2FD6A4"/>
+      <stop offset="100%" stop-color="#FFD93D"/>
     </linearGradient>
 
     <!-- gradiente que se desplaza: da el "shimmer" del titulo -->
     <linearGradient id="p_shimmer" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#8B5CF6"/>
-      <stop offset="30%"  stop-color="#3B82F6"/>
-      <stop offset="55%"  stop-color="#22D3EE"/>
-      <stop offset="80%"  stop-color="#E879F9"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
+      <stop offset="0%"   stop-color="#7D8CFF"/>
+      <stop offset="30%"  stop-color="#2FD6A4"/>
+      <stop offset="55%"  stop-color="#FFD93D"/>
+      <stop offset="80%"  stop-color="#FF5A6E"/>
+      <stop offset="100%" stop-color="#7D8CFF"/>
       <animateTransform attributeName="gradientTransform" type="translate"
         values="-1 0; 1 0; -1 0" dur="12s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <radialGradient id="p_b1"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-    <radialGradient id="p_b2"><stop offset="0%" stop-color="#22D3EE"   stop-opacity="1"/><stop offset="100%" stop-color="#22D3EE"   stop-opacity="0"/></radialGradient>
-    <radialGradient id="p_b3"><stop offset="0%" stop-color="#E879F9" stop-opacity="1"/><stop offset="100%" stop-color="#E879F9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="p_b1"><stop offset="0%" stop-color="#7D8CFF" stop-opacity="1"/><stop offset="100%" stop-color="#7D8CFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="p_b2"><stop offset="0%" stop-color="#FFD93D"   stop-opacity="1"/><stop offset="100%" stop-color="#FFD93D"   stop-opacity="0"/></radialGradient>
+    <radialGradient id="p_b3"><stop offset="0%" stop-color="#FF5A6E" stop-opacity="1"/><stop offset="100%" stop-color="#FF5A6E" stop-opacity="0"/></radialGradient>
 
     <filter id="p_soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="42"/>
@@ -33,7 +33,7 @@
     </filter>
 
     <pattern id="p_grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
   </defs>
   <style>
@@ -45,27 +45,27 @@
     @keyframes flow { to { stroke-dashoffset: -224; } }
   </style>
 
-  <rect width="1200" height="132" rx="14" fill="#0D1220"/>
+  <rect width="1200" height="132" rx="14" fill="#0B1033"/>
   <rect width="1200" height="132" rx="14" fill="url(#p_grid)"/>
 
-  <path id="p_track" d="M96 56H1104" stroke="#2A3346" stroke-width="2" stroke-linecap="round"/>
+  <path id="p_track" d="M96 56H1104" stroke="#2A3263" stroke-width="2" stroke-linecap="round"/>
   <path d="M96 56H1104" stroke="url(#p_brand)" stroke-width="2.5" stroke-linecap="round"
         stroke-dasharray="1008" stroke-dashoffset="1008" opacity=".85">
     <animate attributeName="stroke-dashoffset" from="1008" to="0" dur="1.6s" fill="freeze"/>
   </path>
-  <path class="flow" d="M96 56H1104" stroke="#22D3EE" stroke-width="3.4"
+  <path class="flow" d="M96 56H1104" stroke="#FFD93D" stroke-width="3.4"
         stroke-linecap="round" filter="url(#p_glow)" opacity=".9"/>
 
-  <circle r="3.4" fill="#E879F9" filter="url(#p_glow)">
+  <circle r="3.4" fill="#FF5A6E" filter="url(#p_glow)">
     <animateMotion dur="3s" repeatCount="indefinite" calcMode="linear">
       <mpath href="#p_track"/>
     </animateMotion>
   </circle>
 
-  <g><circle cx="96.0" cy="56" r="6" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="96.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:0.00s"/><circle cx="264.0" cy="56" r="6" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="264.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:0.42s"/><circle cx="432.0" cy="56" r="6" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="432.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:0.84s"/><circle cx="600.0" cy="56" r="6" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="600.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:1.26s"/><circle cx="768.0" cy="56" r="6" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="768.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:1.68s"/><circle cx="936.0" cy="56" r="6" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="936.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:2.10s"/><circle cx="1104.0" cy="56" r="7.5" fill="#080B14" stroke="url(#p_brand)" stroke-width="2"/><circle cx="1104.0" cy="56" r="3.4" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:2.52s"/></g>
-  <g><text x="96.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#8A97B1" class="f" style="animation-delay:0.20s">PROBLEM</text><text x="264.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#8A97B1" class="f" style="animation-delay:0.29s">SCOPE</text><text x="432.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#8A97B1" class="f" style="animation-delay:0.38s">SOLUTION</text><text x="600.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#8A97B1" class="f" style="animation-delay:0.47s">PLAN</text><text x="768.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#8A97B1" class="f" style="animation-delay:0.56s">BUILD</text><text x="936.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#8A97B1" class="f" style="animation-delay:0.65s">QUALITY</text><text x="1104.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#EEF2FB" class="f" style="animation-delay:0.74s">OPERATE</text></g>
+  <g><circle cx="96.0" cy="56" r="6" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="96.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:0.00s"/><circle cx="264.0" cy="56" r="6" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="264.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:0.42s"/><circle cx="432.0" cy="56" r="6" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="432.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:0.84s"/><circle cx="600.0" cy="56" r="6" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="600.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:1.26s"/><circle cx="768.0" cy="56" r="6" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="768.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:1.68s"/><circle cx="936.0" cy="56" r="6" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="936.0" cy="56" r="2.6" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:2.10s"/><circle cx="1104.0" cy="56" r="7.5" fill="#0B1033" stroke="url(#p_brand)" stroke-width="2"/><circle cx="1104.0" cy="56" r="3.4" fill="url(#p_brand)" filter="url(#p_glow)" class="hop" style="animation-delay:2.52s"/></g>
+  <g><text x="96.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#AEB5DC" class="f" style="animation-delay:0.20s">PROBLEM</text><text x="264.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#AEB5DC" class="f" style="animation-delay:0.29s">SCOPE</text><text x="432.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#AEB5DC" class="f" style="animation-delay:0.38s">SOLUTION</text><text x="600.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#AEB5DC" class="f" style="animation-delay:0.47s">PLAN</text><text x="768.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#AEB5DC" class="f" style="animation-delay:0.56s">BUILD</text><text x="936.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#AEB5DC" class="f" style="animation-delay:0.65s">QUALITY</text><text x="1104.0" y="90" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.1" fill="#F6F2E7" class="f" style="animation-delay:0.74s">OPERATE</text></g>
   <text x="600" y="120" text-anchor="middle" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12"
-        fill="#8A97B1" class="f" style="animation-delay:.9s" opacity="0">
+        fill="#AEB5DC" class="f" style="animation-delay:.9s" opacity="0">
     from business problem → architecture → code → operation
   </text>
 </svg>

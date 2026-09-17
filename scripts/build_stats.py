@@ -40,8 +40,8 @@ if not TOKEN:
 
 # Rampa del heatmap, alineada con la paleta del snake.
 LEVELS = {
-    "dark":  ["#131A2B", "#3B0764", "#5B21B6", "#8B5CF6", "#22D3EE"],
-    "light": ["#EDF0F7", "#DDD6FE", "#A78BFA", "#6D28D9", "#0891B2"],
+    "dark":  ["#161D4D", "#1E4F7A", "#1F8F88", "#2FD6A4", "#FFD93D"],
+    "light": ["#EFE8D6", "#B9E3D2", "#4DBE98", "#0B9B74", "#1B2FD0"],
 }
 
 

@@ -3,25 +3,25 @@
 
   <defs>
     <linearGradient id="t_brand" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#8B5CF6"/>
-      <stop offset="45%"  stop-color="#3B82F6"/>
-      <stop offset="100%" stop-color="#22D3EE"/>
+      <stop offset="0%"   stop-color="#7D8CFF"/>
+      <stop offset="45%"  stop-color="#2FD6A4"/>
+      <stop offset="100%" stop-color="#FFD93D"/>
     </linearGradient>
 
     <!-- gradiente que se desplaza: da el "shimmer" del titulo -->
     <linearGradient id="t_shimmer" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#8B5CF6"/>
-      <stop offset="30%"  stop-color="#3B82F6"/>
-      <stop offset="55%"  stop-color="#22D3EE"/>
-      <stop offset="80%"  stop-color="#E879F9"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
+      <stop offset="0%"   stop-color="#7D8CFF"/>
+      <stop offset="30%"  stop-color="#2FD6A4"/>
+      <stop offset="55%"  stop-color="#FFD93D"/>
+      <stop offset="80%"  stop-color="#FF5A6E"/>
+      <stop offset="100%" stop-color="#7D8CFF"/>
       <animateTransform attributeName="gradientTransform" type="translate"
         values="-1 0; 1 0; -1 0" dur="12s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <radialGradient id="t_b1"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-    <radialGradient id="t_b2"><stop offset="0%" stop-color="#22D3EE"   stop-opacity="1"/><stop offset="100%" stop-color="#22D3EE"   stop-opacity="0"/></radialGradient>
-    <radialGradient id="t_b3"><stop offset="0%" stop-color="#E879F9" stop-opacity="1"/><stop offset="100%" stop-color="#E879F9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="t_b1"><stop offset="0%" stop-color="#7D8CFF" stop-opacity="1"/><stop offset="100%" stop-color="#7D8CFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="t_b2"><stop offset="0%" stop-color="#FFD93D"   stop-opacity="1"/><stop offset="100%" stop-color="#FFD93D"   stop-opacity="0"/></radialGradient>
+    <radialGradient id="t_b3"><stop offset="0%" stop-color="#FF5A6E" stop-opacity="1"/><stop offset="100%" stop-color="#FF5A6E" stop-opacity="0"/></radialGradient>
 
     <filter id="t_soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="42"/>
@@ -32,133 +32,133 @@
     </filter>
 
     <pattern id="t_grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
   </defs>
   <style>
     .p { opacity:0; animation: t_pop .5s cubic-bezier(.2,.7,.3,1) forwards; }
     @keyframes t_pop { from {opacity:0; transform:translateY(7px);} to {opacity:1; transform:none;} }
   </style>
-  <rect width="607" height="312" rx="14" fill="#0D1220"/>
+  <rect width="607" height="312" rx="14" fill="#0B1033"/>
   <rect width="607" height="312" rx="14" fill="url(#t_grid)"/>
-  <text x="30" y="40" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">AI TOOLING</text>
+  <text x="30" y="40" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#AEB5DC" letter-spacing="2">AI TOOLING</text>
     <g class="p" style="animation-delay:0.14s">
       <rect x="30" y="48" width="118" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="45" cy="61" r="3.5" fill="#8B5CF6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="45" cy="61" r="3.5" fill="#7D8CFF"/>
       <text x="56" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Claude Code</text>
+            font-weight="500" fill="#F6F2E7">Claude Code</text>
     </g>
     <g class="p" style="animation-delay:0.21s">
       <rect x="157" y="48" width="81" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="172" cy="61" r="3.5" fill="#3B82F6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="172" cy="61" r="3.5" fill="#2FD6A4"/>
       <text x="183" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Cursor</text>
+            font-weight="500" fill="#F6F2E7">Cursor</text>
     </g>
     <g class="p" style="animation-delay:0.28s">
       <rect x="247" y="48" width="73" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="262" cy="61" r="3.5" fill="#22D3EE"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="262" cy="61" r="3.5" fill="#FFD93D"/>
       <text x="273" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Warp</text>
+            font-weight="500" fill="#F6F2E7">Warp</text>
     </g>
     <g class="p" style="animation-delay:0.35s">
       <rect x="329" y="48" width="85" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="344" cy="61" r="3.5" fill="#E879F9"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="344" cy="61" r="3.5" fill="#FF5A6E"/>
       <text x="355" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Ollama</text>
-    </g><text x="30" y="94" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">AGENTIC LAYER</text>
+            font-weight="500" fill="#F6F2E7">Ollama</text>
+    </g><text x="30" y="94" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#AEB5DC" letter-spacing="2">AGENTIC LAYER</text>
     <g class="p" style="animation-delay:0.34s">
       <rect x="30" y="102" width="129" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="45" cy="115" r="3.5" fill="#8B5CF6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="45" cy="115" r="3.5" fill="#7D8CFF"/>
       <text x="56" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Coding agents</text>
+            font-weight="500" fill="#F6F2E7">Coding agents</text>
     </g>
     <g class="p" style="animation-delay:0.41s">
       <rect x="168" y="102" width="120" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="183" cy="115" r="3.5" fill="#3B82F6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="183" cy="115" r="3.5" fill="#2FD6A4"/>
       <text x="194" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">MCP servers</text>
+            font-weight="500" fill="#F6F2E7">MCP servers</text>
     </g>
     <g class="p" style="animation-delay:0.48s">
       <rect x="296" y="102" width="78" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="311" cy="115" r="3.5" fill="#22D3EE"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="311" cy="115" r="3.5" fill="#FFD93D"/>
       <text x="322" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Skills</text>
+            font-weight="500" fill="#F6F2E7">Skills</text>
     </g>
     <g class="p" style="animation-delay:0.55s">
       <rect x="383" y="102" width="108" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="398" cy="115" r="3.5" fill="#E879F9"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="398" cy="115" r="3.5" fill="#FF5A6E"/>
       <text x="409" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Guard-rails</text>
+            font-weight="500" fill="#F6F2E7">Guard-rails</text>
     </g>
     <g class="p" style="animation-delay:0.62s">
       <rect x="500" y="102" width="77" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="515" cy="115" r="3.5" fill="#8B5CF6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="515" cy="115" r="3.5" fill="#7D8CFF"/>
       <text x="526" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Evals</text>
-    </g><text x="30" y="148" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">ARCHITECTURE</text>
+            font-weight="500" fill="#F6F2E7">Evals</text>
+    </g><text x="30" y="148" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#AEB5DC" letter-spacing="2">ARCHITECTURE</text>
     <g class="p" style="animation-delay:0.54s">
       <rect x="30" y="156" width="156" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="45" cy="169" r="3.5" fill="#8B5CF6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="45" cy="169" r="3.5" fill="#7D8CFF"/>
       <text x="56" y="173" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Module Federation</text>
+            font-weight="500" fill="#F6F2E7">Module Federation</text>
     </g>
     <g class="p" style="animation-delay:0.61s">
       <rect x="195" y="156" width="90" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="210" cy="169" r="3.5" fill="#3B82F6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="210" cy="169" r="3.5" fill="#2FD6A4"/>
       <text x="221" y="173" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">qiankun</text>
+            font-weight="500" fill="#F6F2E7">qiankun</text>
     </g>
     <g class="p" style="animation-delay:0.68s">
       <rect x="295" y="156" width="133" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="310" cy="169" r="3.5" fill="#22D3EE"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="310" cy="169" r="3.5" fill="#FFD93D"/>
       <text x="321" y="173" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Microfrontends</text>
-    </g><text x="30" y="202" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">TESTING</text>
+            font-weight="500" fill="#F6F2E7">Microfrontends</text>
+    </g><text x="30" y="202" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#AEB5DC" letter-spacing="2">TESTING</text>
     <g class="p" style="animation-delay:0.74s">
       <rect x="30" y="210" width="69" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="45" cy="223" r="3.5" fill="#8B5CF6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="45" cy="223" r="3.5" fill="#7D8CFF"/>
       <text x="56" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Jest</text>
+            font-weight="500" fill="#F6F2E7">Jest</text>
     </g>
     <g class="p" style="animation-delay:0.81s">
       <rect x="108" y="210" width="135" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="123" cy="223" r="3.5" fill="#3B82F6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="123" cy="223" r="3.5" fill="#2FD6A4"/>
       <text x="134" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Testing Library</text>
+            font-weight="500" fill="#F6F2E7">Testing Library</text>
     </g>
     <g class="p" style="animation-delay:0.88s">
       <rect x="253" y="210" width="108" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="268" cy="223" r="3.5" fill="#22D3EE"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="268" cy="223" r="3.5" fill="#FFD93D"/>
       <text x="279" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Playwright</text>
-    </g><text x="30" y="256" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">PRODUCT OPS</text>
+            font-weight="500" fill="#F6F2E7">Playwright</text>
+    </g><text x="30" y="256" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#AEB5DC" letter-spacing="2">PRODUCT OPS</text>
     <g class="p" style="animation-delay:0.94s">
       <rect x="30" y="264" width="66" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="45" cy="277" r="3.5" fill="#8B5CF6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="45" cy="277" r="3.5" fill="#7D8CFF"/>
       <text x="56" y="281" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Jira</text>
+            font-weight="500" fill="#F6F2E7">Jira</text>
     </g>
     <g class="p" style="animation-delay:1.01s">
       <rect x="105" y="264" width="69" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="120" cy="277" r="3.5" fill="#3B82F6"/>
+            fill="#161D4D" stroke="#2A3263"/>
+      <circle cx="120" cy="277" r="3.5" fill="#2FD6A4"/>
       <text x="131" y="281" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Miro</text>
+            font-weight="500" fill="#F6F2E7">Miro</text>
     </g>
 </svg>

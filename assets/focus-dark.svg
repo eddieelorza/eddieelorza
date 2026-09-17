@@ -3,25 +3,25 @@
 
   <defs>
     <linearGradient id="f_brand" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#8B5CF6"/>
-      <stop offset="45%"  stop-color="#3B82F6"/>
-      <stop offset="100%" stop-color="#22D3EE"/>
+      <stop offset="0%"   stop-color="#7D8CFF"/>
+      <stop offset="45%"  stop-color="#2FD6A4"/>
+      <stop offset="100%" stop-color="#FFD93D"/>
     </linearGradient>
 
     <!-- gradiente que se desplaza: da el "shimmer" del titulo -->
     <linearGradient id="f_shimmer" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#8B5CF6"/>
-      <stop offset="30%"  stop-color="#3B82F6"/>
-      <stop offset="55%"  stop-color="#22D3EE"/>
-      <stop offset="80%"  stop-color="#E879F9"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
+      <stop offset="0%"   stop-color="#7D8CFF"/>
+      <stop offset="30%"  stop-color="#2FD6A4"/>
+      <stop offset="55%"  stop-color="#FFD93D"/>
+      <stop offset="80%"  stop-color="#FF5A6E"/>
+      <stop offset="100%" stop-color="#7D8CFF"/>
       <animateTransform attributeName="gradientTransform" type="translate"
         values="-1 0; 1 0; -1 0" dur="12s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <radialGradient id="f_b1"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-    <radialGradient id="f_b2"><stop offset="0%" stop-color="#22D3EE"   stop-opacity="1"/><stop offset="100%" stop-color="#22D3EE"   stop-opacity="0"/></radialGradient>
-    <radialGradient id="f_b3"><stop offset="0%" stop-color="#E879F9" stop-opacity="1"/><stop offset="100%" stop-color="#E879F9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="f_b1"><stop offset="0%" stop-color="#7D8CFF" stop-opacity="1"/><stop offset="100%" stop-color="#7D8CFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="f_b2"><stop offset="0%" stop-color="#FFD93D"   stop-opacity="1"/><stop offset="100%" stop-color="#FFD93D"   stop-opacity="0"/></radialGradient>
+    <radialGradient id="f_b3"><stop offset="0%" stop-color="#FF5A6E" stop-opacity="1"/><stop offset="100%" stop-color="#FF5A6E" stop-opacity="0"/></radialGradient>
 
     <filter id="f_soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="42"/>
@@ -32,86 +32,86 @@
     </filter>
 
     <pattern id="f_grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
   </defs>
   <style>
     .f { opacity:0; animation: rise .55s ease-out forwards; }
     @keyframes rise { from {opacity:0; transform:translateX(-8px);} to {opacity:1; transform:none;} }
   </style>
-  <rect width="1000" height="264" rx="14" fill="#0D1220"/>
+  <rect width="1000" height="264" rx="14" fill="#0B1033"/>
   <rect width="1000" height="264" rx="14" fill="url(#f_grid)"/>
   
     <g>
-      <circle cx="36" cy="44" r="5" fill="#8B5CF6" filter="url(#f_glow)"
+      <circle cx="36" cy="44" r="5" fill="#7D8CFF" filter="url(#f_glow)"
               class="f" style="animation-delay:0.15s"/>
       <text x="54" y="50" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16.5" font-weight="600"
-            fill="#EEF2FB" class="f" style="animation-delay:0.15s">Agent guard-rails &amp; evals</text>
-      <path d="M255 44H877" stroke="#2A3346" stroke-width="1.6"
+            fill="#F6F2E7" class="f" style="animation-delay:0.15s">Agent guard-rails &amp; evals</text>
+      <path d="M255 44H877" stroke="#2A3263" stroke-width="1.6"
             stroke-dasharray="623" stroke-dashoffset="623">
         <animate attributeName="stroke-dashoffset" from="623" to="0" dur=".9s"
                  begin="0.30s" fill="freeze"/>
       </path>
       <g class="f" style="animation-delay:0.70s">
         <rect x="893" y="30" width="77" height="28" rx="14"
-              fill="#131A2B" stroke="#2A3346"/>
-        <circle cx="908" cy="44" r="3.5" fill="#8B5CF6"/>
+              fill="#161D4D" stroke="#2A3263"/>
+        <circle cx="908" cy="44" r="3.5" fill="#7D8CFF"/>
         <text x="919" y="49" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-              font-weight="500" fill="#8A97B1">Spine</text>
+              font-weight="500" fill="#AEB5DC">Spine</text>
       </g>
     </g>
     <g>
-      <circle cx="36" cy="102" r="5" fill="#3B82F6" filter="url(#f_glow)"
+      <circle cx="36" cy="102" r="5" fill="#2FD6A4" filter="url(#f_glow)"
               class="f" style="animation-delay:0.31s"/>
       <text x="54" y="108" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16.5" font-weight="600"
-            fill="#EEF2FB" class="f" style="animation-delay:0.31s">LLM features in real products</text>
-      <path d="M288 102H869" stroke="#2A3346" stroke-width="1.6"
+            fill="#F6F2E7" class="f" style="animation-delay:0.31s">LLM features in real products</text>
+      <path d="M288 102H869" stroke="#2A3263" stroke-width="1.6"
             stroke-dasharray="581" stroke-dashoffset="581">
         <animate attributeName="stroke-dashoffset" from="581" to="0" dur=".9s"
                  begin="0.46s" fill="freeze"/>
       </path>
       <g class="f" style="animation-delay:0.86s">
         <rect x="885" y="88" width="85" height="28" rx="14"
-              fill="#131A2B" stroke="#2A3346"/>
-        <circle cx="900" cy="102" r="3.5" fill="#3B82F6"/>
+              fill="#161D4D" stroke="#2A3263"/>
+        <circle cx="900" cy="102" r="3.5" fill="#2FD6A4"/>
         <text x="911" y="107" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-              font-weight="500" fill="#8A97B1">Tastify</text>
+              font-weight="500" fill="#AEB5DC">Tastify</text>
       </g>
     </g>
     <g>
-      <circle cx="36" cy="160" r="5" fill="#22D3EE" filter="url(#f_glow)"
+      <circle cx="36" cy="160" r="5" fill="#FFD93D" filter="url(#f_glow)"
               class="f" style="animation-delay:0.47s"/>
       <text x="54" y="166" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16.5" font-weight="600"
-            fill="#EEF2FB" class="f" style="animation-delay:0.47s">Local-first AI</text>
-      <path d="M167 160H845" stroke="#2A3346" stroke-width="1.6"
+            fill="#F6F2E7" class="f" style="animation-delay:0.47s">Local-first AI</text>
+      <path d="M167 160H845" stroke="#2A3263" stroke-width="1.6"
             stroke-dasharray="677" stroke-dashoffset="677">
         <animate attributeName="stroke-dashoffset" from="677" to="0" dur=".9s"
                  begin="0.62s" fill="freeze"/>
       </path>
       <g class="f" style="animation-delay:1.02s">
         <rect x="861" y="146" width="109" height="28" rx="14"
-              fill="#131A2B" stroke="#2A3346"/>
-        <circle cx="876" cy="160" r="3.5" fill="#22D3EE"/>
+              fill="#161D4D" stroke="#2A3263"/>
+        <circle cx="876" cy="160" r="3.5" fill="#FFD93D"/>
         <text x="887" y="165" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-              font-weight="500" fill="#8A97B1">English OS</text>
+              font-weight="500" fill="#AEB5DC">English OS</text>
       </g>
     </g>
     <g>
-      <circle cx="36" cy="218" r="5" fill="#E879F9" filter="url(#f_glow)"
+      <circle cx="36" cy="218" r="5" fill="#FF5A6E" filter="url(#f_glow)"
               class="f" style="animation-delay:0.63s"/>
       <text x="54" y="224" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16.5" font-weight="600"
-            fill="#EEF2FB" class="f" style="animation-delay:0.63s">Product discovery with clients</text>
-      <path d="M296 218H848" stroke="#2A3346" stroke-width="1.6"
+            fill="#F6F2E7" class="f" style="animation-delay:0.63s">Product discovery with clients</text>
+      <path d="M296 218H848" stroke="#2A3263" stroke-width="1.6"
             stroke-dasharray="552" stroke-dashoffset="552">
         <animate attributeName="stroke-dashoffset" from="552" to="0" dur=".9s"
                  begin="0.78s" fill="freeze"/>
       </path>
       <g class="f" style="animation-delay:1.18s">
         <rect x="864" y="204" width="106" height="28" rx="14"
-              fill="#131A2B" stroke="#2A3346"/>
-        <circle cx="879" cy="218" r="3.5" fill="#E879F9"/>
+              fill="#161D4D" stroke="#2A3263"/>
+        <circle cx="879" cy="218" r="3.5" fill="#FF5A6E"/>
         <text x="890" y="223" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-              font-weight="500" fill="#8A97B1">Hotel CRM</text>
+              font-weight="500" fill="#AEB5DC">Hotel CRM</text>
       </g>
     </g>
 </svg>

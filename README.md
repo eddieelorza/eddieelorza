@@ -27,9 +27,9 @@
 I design and build products end to end: from the business problem to the architecture, the code and the operation. Engineering first, product as the differentiator, AI First.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/pipeline-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.svg">
-  <img alt="Problem → Scope → Solution → Plan → Build → Quality → Operate" src="./assets/pipeline-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/pipeline-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.svg?v=2">
+  <img alt="Problem → Scope → Solution → Plan → Build → Quality → Operate" src="./assets/pipeline-dark.svg?v=2" width="100%">
 </picture>
 
 ## Impact
@@ -58,9 +58,9 @@ I design and build products end to end: from the business problem to the archite
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=3">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=3">
-  <img alt="AI TOOLING: Claude Code, Cursor, Warp, Ollama · AGENTIC LAYER: Coding agents, MCP servers, Skills, Guard-rails, Evals · ARCHITECTURE: Module Federation, qiankun, Microfrontends · TESTING: Jest, Testing Library, Playwright · PRODUCT OPS: Jira, Miro" src="./assets/tooling-dark.svg?v=3">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=4">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=4">
+  <img alt="AI TOOLING: Claude Code, Cursor, Warp, Ollama · AGENTIC LAYER: Coding agents, MCP servers, Skills, Guard-rails, Evals · ARCHITECTURE: Module Federation, qiankun, Microfrontends · TESTING: Jest, Testing Library, Playwright · PRODUCT OPS: Jira, Miro" src="./assets/tooling-dark.svg?v=4">
 </picture>
 
 <sub>🎓 [MSc Applied AI · Tec de Monterrey](https://certificados.tec.mx/certificate/ac443de24951594489ed639728a30e04) · 🏆 [PSPO I](https://www.credly.com/badges/31fa03b0-fbe1-4d6e-a405-64d747b6070c/linked_in_profile) · ☁️ [Azure Fundamentals](https://www.credly.com/badges/4c23d8a9-30c9-47f7-890d-02e0fd99e37f/linked_in_profile) · 📊 [AI &amp; ML](https://www.credential.net/65d5f712-b228-4079-9665-f6227cf9aa31#acc.Gw5mNbUT) · [Data Science](https://www.credential.net/62973c26-b6d0-4ee8-99a4-829f71c011a2#acc.2PgJhFA6) · [Data Viz](https://www.credential.net/0b9a18ec-b9ba-41bd-8009-26346e027a26#acc.sYDgoLZC) · [BI](https://www.credential.net/84ab1b58-7192-44e9-8526-8d8014b0df3d#acc.BMTI2GeD)</sub>
@@ -68,14 +68,14 @@ I design and build products end to end: from the business problem to the archite
 ## GitHub
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/stats-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg?v=2">
-  <img alt="GitHub stats" src="./assets/stats-dark.svg?v=2" width="49%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/stats-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg?v=3">
+  <img alt="GitHub stats" src="./assets/stats-dark.svg?v=3" width="49%">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/langs-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/langs-light.svg?v=2">
-  <img alt="Most used languages" src="./assets/langs-dark.svg?v=2" width="49%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/langs-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/langs-light.svg?v=3">
+  <img alt="Most used languages" src="./assets/langs-dark.svg?v=3" width="49%">
 </picture>
 
 <div align="center"><sub>Mexico City · <a href="https://eddieelorza.com">eddieelorza.com</a> · <a href="mailto:edd.elorza@gmail.com">edd.elorza@gmail.com</a></sub></div>
