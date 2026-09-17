@@ -3,20 +3,23 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img alt="Eddie Elorza — Software Engineer · Product Builder" src="./assets/hero-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/hero-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg?v=2">
+  <img alt="Eddie Elorza — Software Engineer · Product Builder" src="./assets/hero-dark.svg?v=2" width="100%">
 </picture>
 
 <a href="https://git.io/typing-svg">
-  <img alt="" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1400&color=8B5CF6&center=true&vCenter=true&width=680&height=40&lines=Software+Engineer+%C2%B7+Product+Builder;Fintech+%26+payments+platforms;AI-powered+products%2C+end+to+end;From+business+problem+to+production">
+  <picture>
+    <source media="(prefers-color-scheme: dark)"  srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1400&center=true&vCenter=true&width=680&height=40&lines=Software+Engineer+%C2%B7+Product+Builder;Fintech+%26+payments+platforms;AI-powered+products%2C+end+to+end;From+business+problem+to+production&color=2FD6A4">
+    <img alt="" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1400&center=true&vCenter=true&width=680&height=40&lines=Software+Engineer+%C2%B7+Product+Builder;Fintech+%26+payments+platforms;AI-powered+products%2C+end+to+end;From+business+problem+to+production&color=1B2FD0">
+  </picture>
 </a>
 
 <p>
-  <a href="https://eddieelorza.com/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/eddie-elorza/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-3B82F6?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="mailto:edd.elorza@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Let's_talk-22D3EE?style=for-the-badge&logo=maildotru&logoColor=white"></a>
-  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=eddieelorza&style=for-the-badge&color=E879F9&label=VISITS">
+  <a href="https://eddieelorza.com/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-1B2FD0?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/eddie-elorza/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0B9B74?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:edd.elorza@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Let's_talk-F4CF1B?style=for-the-badge&logo=maildotru&logoColor=101A78"></a>
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=eddieelorza&style=for-the-badge&color=E8304A&label=VISITS">
 </p>
 
 </div>

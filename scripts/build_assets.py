@@ -103,119 +103,141 @@ def base_defs(idp: str) -> str:
 
 
 # ---------------------------------------------------------------- HERO
-NODES = [
-    (824,  92), (902,  58), (978, 112), (1056,  68), (1126, 132),
-    (858, 176), (942, 196), (1022, 168), (1102, 220),
-    (884, 268), (976, 280), (1062, 292),
-]
-EDGES = [
-    (0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (5, 6), (6, 2), (2, 7),
-    (7, 4), (7, 8), (5, 9), (9, 10), (10, 6), (10, 11), (11, 8), (8, 4),
-]
+# Paleta tomada del sticker (marcador azul tinta, verde, amarillo y el rojo
+# del corazon). Solo el hero la usa; el resto de assets conserva sus tokens.
+import base64
+
+HERO_TOKENS = {
+    "dark": {
+        "bg": "#0B1033", "paper": "#FFFFFF", "dotop": "0.07",
+        "ink": "#F6F2E7", "muted": "#AEB5DC", "faint": "#2A3263",
+        "blue": "#7D8CFF", "green": "#2FD6A4", "yellow": "#FFD93D", "red": "#FF5A6E",
+        "shadow": "#000000", "shadowop": "0.55", "hl": "1", "hltext": "#0B1033",
+    },
+    "light": {
+        "bg": "#FBF6EA", "paper": "#1424A8", "dotop": "0.09",
+        "ink": "#101A78", "muted": "#48507F", "faint": "#E4DCC6",
+        "blue": "#1B2FD0", "green": "#0B9B74", "yellow": "#F4CF1B", "red": "#E8304A",
+        "shadow": "#1424A8", "shadowop": "0.22", "hl": "0.55", "hltext": "#101A78",
+    },
+}
+
+STICKER = Path(__file__).resolve().parent.parent / "assets" / "sticker-heart.webp"
+STICKER_RATIO = 1162 / 1076  # ancho / alto del recorte
 
 
 def hero(t: dict) -> str:
     W, H = 1200, 340
-    idp = "h_"
+    h = HERO_TOKENS["dark" if t is THEMES["dark"] else "light"]
+    data = base64.b64encode(STICKER.read_bytes()).decode()
 
-    edges, motion = [], []
-    for i, (a, b) in enumerate(EDGES):
-        x1, y1 = NODES[a]
-        x2, y2 = NODES[b]
-        length = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
-        edges.append(
-            f'<path id="{idp}e{i}" d="M{x1} {y1}L{x2} {y2}" stroke="url(#{idp}brand)" '
-            f'stroke-width="1.1" stroke-opacity=".45" fill="none" '
-            f'stroke-dasharray="{length:.1f}" stroke-dashoffset="{length:.1f}">'
-            f'<animate attributeName="stroke-dashoffset" from="{length:.1f}" to="0" '
-            f'dur="1.1s" begin="{0.25 + i * 0.055:.2f}s" fill="freeze"/></path>'
-        )
+    sh = 300                       # alto del sticker
+    sw = round(sh * STICKER_RATIO)
+    sx, sy = 1150 - sw, 22
+    cx, cy = sx + sw / 2, sy + sh / 2
+    # el corazon del dibujo queda arriba a la izquierda del sticker
+    hx, hy = sx + sw * 0.25, sy + sh * 0.30
 
-    # 3 paquetes de datos viajando por la red
-    for k, (eid, dur, begin) in enumerate([(1, 5.5, 1.2), (7, 6.4, 2.6), (12, 5.0, 3.8)]):
-        motion.append(
-            f'<circle r="2.6" fill="@CYAN@" filter="url(#{idp}glow)" opacity="0">'
-            f'<animate attributeName="opacity" values="0;1;1;0" dur="{dur}s" '
-            f'begin="{begin}s" repeatCount="indefinite"/>'
-            f'<animateMotion dur="{dur}s" begin="{begin}s" repeatCount="indefinite" '
-            f'keyPoints="0;1" keyTimes="0;1" calcMode="linear">'
-            f'<mpath href="#{idp}e{eid}"/></animateMotion></circle>'
-        )
+    hearts = []
+    for i, (dx, size, dur, begin) in enumerate([(-6, 11, 3.6, 0.8), (14, 8, 4.2, 2.1), (-18, 7, 3.9, 3.3)]):
+        x0 = hx + dx
+        hearts.append(f"""
+    <path d="M0 3.2C0 1.4 1.4 0 3.1 0c1.1 0 2.1.6 2.6 1.5C6.2.6 7.2 0 8.3 0 10 0 11.4 1.4 11.4 3.2c0 3.1-5.7 6.8-5.7 6.8S0 6.3 0 3.2z"
+          fill="none" stroke="{h['red']}" stroke-width="1.8" stroke-linejoin="round" opacity="0">
+      <animateTransform attributeName="transform" type="translate"
+        values="{x0:.0f} {hy:.0f}; {x0 - 10:.0f} {hy - 70:.0f}" dur="{dur}s" begin="{begin}s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.6;1" dur="{dur}s" begin="{begin}s" repeatCount="indefinite"/>
+    </path>""")
 
-    dots = []
-    for i, (x, y) in enumerate(NODES):
-        r = 4.2 if i in (2, 5, 10) else 2.8
-        dots.append(
-            f'<circle cx="{x}" cy="{y}" r="{r}" fill="url(#{idp}brand)" filter="url(#{idp}glow)" '
-            f'class="node" style="animation-delay:{i * 0.31:.2f}s"/>'
-        )
+    def spark(x, y, r, color, begin):
+        return (f'<path d="M{x} {y - r}Q{x + r * .18} {y - r * .18} {x + r} {y}Q{x + r * .18} {y + r * .18} {x} {y + r}'
+                f'Q{x - r * .18} {y + r * .18} {x - r} {y}Q{x - r * .18} {y - r * .18} {x} {y - r}Z" fill="{color}">'
+                f'<animate attributeName="opacity" values=".25;1;.25" dur="2.6s" begin="{begin}s" repeatCount="indefinite"/>'
+                f'</path>')
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img"
-     aria-label="Eddie Elorza - Software Engineer, Product Builder">
-{base_defs(idp)}
+     aria-label="Eddie Elorza - Software Engineer, Product Builder. Designing and building products end to end.">
+  <defs>
+    <pattern id="h_dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="{h['paper']}" fill-opacity="{h['dotop']}"/>
+    </pattern>
+    <filter id="h_rough" x="-5%" y="-40%" width="110%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="4"/>
+    </filter>
+    <filter id="h_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="{h['shadow']}" flood-opacity="{h['shadowop']}"/>
+    </filter>
+  </defs>
   <style>
-    .f  {{ opacity:0; animation: rise .85s cubic-bezier(.22,.68,.24,1) forwards; }}
-    @keyframes rise {{ from {{ opacity:0; transform: translateY(14px); }} to {{ opacity:1; transform: none; }} }}
-    @keyframes bar  {{ from {{ transform: scaleX(0); }} to {{ transform: scaleX(1); }} }}
-    @keyframes node {{ 0%,100% {{ opacity:.45; }} 50% {{ opacity:1; }} }}
-    .node {{ animation: node 3.6s ease-in-out infinite; }}
-    .rule {{ transform-box: fill-box; transform-origin: left center; transform: scaleX(0);
-             animation: bar 1.1s cubic-bezier(.22,.68,.24,1) .5s forwards; }}
-    .caret {{ animation: node 1.05s steps(1) infinite; }}
+    .f  {{ opacity:0; animation: rise .8s cubic-bezier(.22,.68,.24,1) forwards; }}
+    @keyframes rise {{ from {{ opacity:0; transform: translateY(12px); }} to {{ opacity:1; transform: none; }} }}
+    .draw {{ stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 1s cubic-bezier(.3,.7,.3,1) .55s forwards; }}
+    @keyframes draw {{ to {{ stroke-dashoffset: 0; }} }}
+    .pop {{ opacity:0; transform-box: fill-box; transform-origin: center;
+            animation: pop .7s cubic-bezier(.2,1.5,.4,1) .15s forwards; }}
+    @keyframes pop {{ from {{ opacity:0; transform: scale(.82) rotate(-6deg); }} to {{ opacity:1; transform: none; }} }}
+    .caret {{ animation: blink 1.05s steps(1) infinite; }}
+    @keyframes blink {{ 50% {{ opacity:0; }} }}
+    @media (prefers-reduced-motion: reduce) {{
+      .f, .pop {{ animation: none; opacity: 1; }} .draw {{ animation: none; stroke-dashoffset: 0; }} .caret {{ animation: none; }}
+    }}
   </style>
 
-  <rect width="{W}" height="{H}" rx="16" fill="@BG@"/>
-  <rect width="{W}" height="{H}" rx="16" fill="url(#{idp}grid)"/>
+  <rect width="{W}" height="{H}" rx="18" fill="{h['bg']}"/>
+  <rect width="{W}" height="{H}" rx="18" fill="url(#h_dots)"/>
 
-  <g opacity="@BLOBOP@" filter="url(#{idp}soft)">
-    <circle cx="180" cy="90" r="190" fill="url(#{idp}b1)">
-      <animateTransform attributeName="transform" type="translate"
-        values="0 0; 70 40; -30 20; 0 0" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="600" cy="330" r="200" fill="url(#{idp}b2)">
-      <animateTransform attributeName="transform" type="translate"
-        values="0 0; -80 -50; 50 -20; 0 0" dur="22s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1010" cy="60" r="170" fill="url(#{idp}b3)">
-      <animateTransform attributeName="transform" type="translate"
-        values="0 0; 40 60; -60 30; 0 0" dur="26s" repeatCount="indefinite"/>
-    </circle>
+  <!-- trazos de marcador alrededor del sticker -->
+  <g stroke-linecap="round" fill="none" class="f" style="animation-delay:.7s">
+    <path d="M{sx - 34} {sy + 92}l-26 -10M{sx - 30} {sy + 116}h-30M{sx - 34} {sy + 140}l-26 10"
+          stroke="{h['yellow']}" stroke-width="6" filter="url(#h_rough)"/>
+    <path d="M{sx + sw + 8} {sy + 212}q14 -8 28 0M{sx + sw + 4} {sy + 232}q18 -9 34 0"
+          stroke="{h['blue']}" stroke-width="5" filter="url(#h_rough)"/>
   </g>
+  {spark(sx + sw - 18, sy + 18, 11, h['yellow'], 0.4)}
+  {spark(sx - 8, sy + sh - 36, 7, h['green'], 1.5)}
+  {spark(sx + sw * .55, sy + 4, 6, h['blue'], 2.2)}
 
-  <g opacity="@GLOWOP@" filter="url(#{idp}soft)">
-    <circle cx="975" cy="175" r="145" fill="url(#{idp}b1)"/>
+  <!-- sticker: entra con un pop y luego se mece -->
+  <g class="pop">
+    <g filter="url(#h_shadow)">
+      <animateTransform attributeName="transform" type="rotate"
+        values="-2 {cx:.0f} {cy:.0f}; 2 {cx:.0f} {cy:.0f}; -2 {cx:.0f} {cy:.0f}" dur="7s"
+        calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" repeatCount="indefinite"/>
+      <image x="{sx}" y="{sy}" width="{sw}" height="{sh}" href="data:image/webp;base64,{data}"/>
+    </g>
   </g>
-
-  <!-- red neuronal -->
-  <g>{''.join(edges)}{''.join(dots)}{''.join(motion)}</g>
+  <g>{''.join(hearts)}</g>
 
   <!-- texto -->
   <g font-family="@FONT@">
     <g class="f" style="animation-delay:.05s">
-      <rect x="64" y="62" width="9" height="9" rx="2" fill="@CYAN@"/>
-      <text x="86" y="71" font-family="@MONO@" font-size="12.5" letter-spacing="3.4"
-            fill="@MUTED@">SOFTWARE ENGINEER · PRODUCT BUILDER</text>
+      <path d="M58 52h392l-4 26H62z" fill="{h['yellow']}" fill-opacity="{h['hl']}" filter="url(#h_rough)"/>
+      <text x="70" y="70" font-family="@MONO@" font-size="12.5" font-weight="700" letter-spacing="3"
+            fill="{h['hltext']}">SOFTWARE ENGINEER · PRODUCT BUILDER</text>
     </g>
 
-    <text class="f" style="animation-delay:.16s" x="62" y="158" font-size="66" font-weight="800"
-          letter-spacing="-2.2" fill="url(#{idp}shimmer)">Eddie Elorza</text>
+    <text class="f" style="animation-delay:.16s" x="62" y="152" font-size="68" font-weight="800"
+          letter-spacing="-2.2" fill="{h['ink']}">Eddie Elorza</text>
+    <path class="draw" d="M66 170c70 -9 150 -10 225 -5s110 5 160 -3" fill="none"
+          stroke="{h['green']}" stroke-width="7" stroke-linecap="round" filter="url(#h_rough)"/>
 
-    <text class="f" style="animation-delay:.28s" x="65" y="196" font-size="20" font-weight="500"
-          fill="@TEXT@" opacity=".92">Designing and building products end to end.</text>
+    <text class="f" style="animation-delay:.3s" x="65" y="214" font-size="21" font-weight="600"
+          fill="{h['ink']}">Designing and building products end to end.</text>
 
-    <text class="f" style="animation-delay:.38s" x="65" y="226" font-size="15" fill="@MUTED@">
-      Fintech &amp; payments · Frontend architecture · AI First
-    </text>
+    <g class="f" style="animation-delay:.4s" font-size="15.5" fill="{h['muted']}">
+      <circle cx="70" cy="242" r="4" fill="{h['blue']}"/><text x="82" y="247">Fintech &amp; payments</text>
+      <circle cx="248" cy="242" r="4" fill="{h['green']}"/><text x="260" y="247">Frontend architecture</text>
+      <circle cx="441" cy="242" r="4" fill="{h['red']}"/><text x="453" y="247">AI First</text>
+    </g>
 
-    <rect class="rule" x="64" y="252" width="330" height="2.5" rx="2" fill="url(#{idp}brand)"/>
-
-    <g class="f" style="animation-delay:.62s" font-family="@MONO@" font-size="13" fill="@MUTED@">
-      <text x="64" y="288">
-        <tspan fill="@CYAN@">~</tspan> Mexico City, MX
-        <tspan fill="@FAINT@">  |  </tspan>MSc Applied AI
-        <tspan fill="@FAINT@">  |  </tspan>PSPO I
-        <tspan fill="@FAINT@">  |  </tspan>6+ yrs building software<tspan class="caret" fill="@CYAN@">_</tspan>
+    <g class="f" style="animation-delay:.6s" font-family="@MONO@" font-size="13" fill="{h['muted']}">
+      <text x="64" y="294">
+        <tspan fill="{h['red']}">♥</tspan> Mexico City, MX
+        <tspan fill="{h['faint']}">  |  </tspan>MSc Applied AI
+        <tspan fill="{h['faint']}">  |  </tspan>PSPO I
+        <tspan fill="{h['faint']}">  |  </tspan>6+ yrs building software<tspan class="caret" fill="{h['blue']}">_</tspan>
       </text>
     </g>
   </g>
