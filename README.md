@@ -2,7 +2,6 @@
   ┌──────────────────────────────────────────────────────────────┐
   │  Perfil de GitHub — Eddie Elorza                             │
   │  Assets animados generados con: python3 scripts/build_assets.py │
-  │  Antes de publicar: bash scripts/personalize.sh <tu-usuario>  │
   └──────────────────────────────────────────────────────────────┘
 -->
 
@@ -11,11 +10,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img alt="Eddie Elorza — AI Product Engineer" src="./assets/hero-dark.svg" width="100%">
+  <img alt="Eddie Elorza — Software Engineer · Product Builder" src="./assets/hero-dark.svg" width="100%">
 </picture>
 
 <a href="https://git.io/typing-svg">
-  <img alt="" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1400&color=8B5CF6&center=true&vCenter=true&width=680&height=40&lines=AI+Product+Engineer;LLM+systems+%26+agentic+workflows;Frontend+architecture+at+fintech+scale;Product+discovery+%E2%86%92+shipped+%E2%86%92+measured">
+  <img alt="" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1400&color=8B5CF6&center=true&vCenter=true&width=680&height=40&lines=Software+Engineer+%C2%B7+Product+Builder;Fintech+%26+payments+platforms;AI-powered+products%2C+end+to+end;From+business+problem+to+production">
 </a>
 
 <p>
@@ -34,14 +33,14 @@
 
 <br>
 
-## `01` — What I actually do
+## `01` — What I do
 
-I take a business problem and carry it all the way to a measurable outcome: discovery, product strategy, architecture, code, instrumentation, iteration. AI is not a feature I bolt on at the end — it is part of how the product works and how I build it.
+I design and build products end to end: from the business problem to the architecture, the code and the operation. Engineering first, with product as the differentiator. I work AI First: I use AI agents throughout development and bring AI into the product where it adds value.
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="./assets/pipeline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.svg">
-  <img alt="Problem → Discovery → Strategy → Architecture → Engineering → Data → Impact" src="./assets/pipeline-dark.svg" width="100%">
+  <img alt="Problem → Scope → Solution → Plan → Build → Quality → Operate" src="./assets/pipeline-dark.svg" width="100%">
 </picture>
 
 <br>
@@ -50,14 +49,14 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 <tr>
 <td width="33%" valign="top">
 
-### 🤖 &nbsp;AI
+### ⚙️ &nbsp;Engineering
 
-`LLM integrations`
-`AI agents`
-`Agentic workflows`
-`RAG & evals`
-`Intelligent automation`
-`AI-assisted delivery`
+`React / TypeScript`
+`Microfrontends`
+`Module Federation`
+`Typed API contracts`
+`Payments integration`
+`Testing (Jest, Playwright)`
 
 </td>
 <td width="33%" valign="top">
@@ -65,23 +64,23 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 ### 🎯 &nbsp;Product
 
 `Discovery`
-`Strategy & positioning`
-`MVP definition`
-`Roadmapping`
-`Product analytics`
-`KPI & north-star design`
+`PRDs & acceptance criteria`
+`Roadmap & backlog`
+`Scrum · PSPO I`
+`Build vs. buy`
+`Technical leadership`
 
 </td>
 <td width="33%" valign="top">
 
-### ⚙️ &nbsp;Engineering
+### 🤖 &nbsp;AI
 
-`Frontend architecture`
-`React / TypeScript`
-`Microfrontends`
-`System design`
-`API & payments integration`
-`Performance budgets`
+`AI-assisted development`
+`Coding agents (Claude Code)`
+`LLM features in product`
+`Agent guard-rails & evals`
+`Local AI (Ollama)`
+`Automation workflows`
 
 </td>
 </tr>
@@ -98,20 +97,22 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 
 <table>
 <tr>
-<td width="25%" align="center"><h3>6h → 2h</h3><sub>incident cycle time</sub></td>
-<td width="25%" align="center"><h3>4</h3><sub>microfrontends owned E2E</sub></td>
-<td width="25%" align="center"><h3>6+ yrs</h3><sub>React in fintech</sub></td>
-<td width="25%" align="center"><h3>1 monolith</h3><sub>decomposed &amp; shipped</sub></td>
+<td width="25%" align="center"><h3>5</h3><sub>engineers led on a payments platform</sub></td>
+<td width="25%" align="center"><h3>10</h3><sub>hotels on a CRM I built</sub></td>
+<td width="25%" align="center"><h3>Vue 2 → React</h3><sub>payment gateway migration</sub></td>
+<td width="25%" align="center"><h3>6+ yrs</h3><sub>building software</sub></td>
 </tr>
 </table>
 
-**⚡ Operational automation** — Designed and led an incident-handling flow (SPEI, banca digital, ATM, acquirer errors) that cut a 6+ hour cycle down to ~2 hours, and improved detection before customers noticed.
+**💳 Payments leadership** — At Paga Fácil (Banco Azteca) I led a full-stack team of five: roadmap, backlog, Scrum and code reviews, while still shipping features. I migrated the gateway from Vue 2 to React as a federated microfrontend with PWA support, and implemented a per-attempt idempotency key so retries never duplicate a payment.
 
-**🏗️ Architecture migration** — Drove the move from a monolithic WAR frontend to microfrontends: independent deploys, clearer ownership boundaries, no more all-or-nothing releases.
+**🏗️ Microfrontend platform** — On a regional credit &amp; collections platform I built the shared frontend core (layout, login, theme, components) consumed at runtime via Module Federation, plus three modules, all coexisting with the legacy system without forcing a full migration.
 
-**💳 Payments depth** — 3DS, idempotency, acquirer routing, collections and reconciliation flows. I've owned the frontend on products where a bad deploy is a financial incident.
+**🏨 Product in production** — I took a custom CRM for a 10-hotel group from discovery to operation. Discovery showed the real problem was commercial visibility, not the screens requested, and that reshaped the roadmap.
 
-**🤝 Product partnership** — I work in the seam between Product, UX, Backend, QA and Data, translating technical trade-offs into business consequences and back.
+**⚡ Operational automation** — I automated incident resolution for the deposits area.
+
+**🧪 Today** — Frontend for the credit back office at Clip: React, TypeScript and qiankun microfrontends, typed API contracts with adapters and mocks, tested with Jest and Playwright.
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="./assets/divider-dark.svg">
@@ -126,26 +127,20 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 
 <sub>**FRONTEND**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=react,ts,js,html,sass,tailwind,nextjs,vue,vite,webpack&theme=dark">
-  <img alt="React, TypeScript, JavaScript, HTML, Sass, Tailwind, Next.js, Vue, Vite, Webpack" src="https://skillicons.dev/icons?i=react,ts,js,html,sass,tailwind,nextjs,vue,vite,webpack&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=react,ts,js,html,sass,tailwind,vue,vite,webpack&theme=dark">
+  <img alt="React, TypeScript, JavaScript, HTML, Sass, Tailwind, Vue, Vite, Webpack" src="https://skillicons.dev/icons?i=react,ts,js,html,sass,tailwind,vue,vite,webpack&theme=light">
 </picture>
 
 <sub>**BACKEND &amp; DATA**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=python,fastapi,postgres,mysql,supabase,firebase,elasticsearch&theme=dark">
-  <img alt="Python, FastAPI, PostgreSQL, MySQL, Supabase, Firebase, Elasticsearch" src="https://skillicons.dev/icons?i=python,fastapi,postgres,mysql,supabase,firebase,elasticsearch&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=python,fastapi,java,postgres,supabase,sqlite&theme=dark">
+  <img alt="Python, FastAPI, Java, PostgreSQL, Supabase, SQLite" src="https://skillicons.dev/icons?i=python,fastapi,java,postgres,supabase,sqlite&theme=light">
 </picture>
 
 <sub>**PLATFORM &amp; OPS**</sub><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=docker,kubernetes,azure,aws,jenkins,githubactions,git,postman&theme=dark">
-  <img alt="Docker, Kubernetes, Azure, AWS, Jenkins, GitHub Actions, Git, Postman" src="https://skillicons.dev/icons?i=docker,kubernetes,azure,aws,jenkins,githubactions,git,postman&theme=light">
-</picture>
-
-<sub>**AI &amp; ML**</sub><br>
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=pytorch,sklearn&theme=dark">
-  <img alt="PyTorch, scikit-learn" src="https://skillicons.dev/icons?i=pytorch,sklearn&theme=light">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://skillicons.dev/icons?i=docker,azure,vercel,jenkins,githubactions,git,postman&theme=dark">
+  <img alt="Docker, Azure, Vercel, Jenkins, GitHub Actions, Git, Postman" src="https://skillicons.dev/icons?i=docker,azure,vercel,jenkins,githubactions,git,postman&theme=light">
 </picture>
 
 <sub>**PRODUCT &amp; DESIGN**</sub><br>
@@ -156,9 +151,9 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 
 <sub>**TOOLING &amp; PRACTICES**</sub><br><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=2">
-  <img alt="AI TOOLING: Claude Code, Cursor, Warp, Ollama, LLM orchestration · AGENTIC LAYER: LLM agents, MCP servers, Skills, Vector search, RAG · ARCHITECTURE: Module Federation, Microfrontends, n8n · OBSERVABILITY: Dynatrace, Elastic APM, Core Web Vitals, Event tracking · PRODUCT OPS: Jira, Miro, A/B testing" src="./assets/tooling-dark.svg?v=2">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/tooling-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/tooling-light.svg?v=3">
+  <img alt="AI TOOLING: Claude Code, Cursor, Warp, Ollama · AGENTIC LAYER: Coding agents, MCP servers, Skills, Guard-rails, Evals · ARCHITECTURE: Module Federation, qiankun, Microfrontends · TESTING: Jest, Testing Library, Playwright · PRODUCT OPS: Jira, Miro" src="./assets/tooling-dark.svg?v=3">
 </picture>
 
 <br><br>
@@ -175,46 +170,61 @@ I take a business problem and carry it all the way to a measurable outcome: disc
 ## `04` — What I'm building
 
 <details open>
-<summary><b>🏨 &nbsp;Hotel Commercial Intelligence Platform</b> &nbsp;<code>active</code></summary>
+<summary><b>🏨 &nbsp;Hotel Commercial CRM · Operadora SI</b> &nbsp;<code>in production</code></summary>
 
 <br>
 
-Commercial intelligence for hospitality teams: turns raw sales activity into decisions a revenue manager can act on the same morning.
+Custom CRM for a 10-hotel group that replaced a visit-tracking spreadsheet. In production since September 2026.
 
 | | |
 |---|---|
-| **Surface** | CRM · Analytics · Automation · AI assistance |
-| **My role** | Discovery → UX → architecture → build → instrumentation → AI strategy |
-| **Stack** | React · TypeScript · Supabase · LLM layer |
-| **Hard part** | Making the reporting layer answer *"what should I do next?"*, not just *"what happened?"* |
+| **My role** | End to end: discovery, PRD, design, build and operation |
+| **Stack** | React · TypeScript · TanStack Query · Supabase (RLS) · Vercel |
+| **Hard part** | Per-hotel, per-role permissions enforced with Postgres RLS and verified by automated tests, plus rankings by % of each hotel's own goal so results are comparable |
+| **Next** | Generative AI, deliberately left for phase two |
 
 </details>
 
 <details>
-<summary><b>🍽️ &nbsp;Restaurant Digital Product</b> &nbsp;<code>exploring</code></summary>
+<summary><b>🍽️ &nbsp;Tastify · SaaS for restaurants</b> &nbsp;<code>pilot-ready</code></summary>
 
 <br>
 
-Digital experiences for restaurants — improving the guest interaction loop and finding the parts worth automating.
+QR menu with an AI waiter, a cart shared by the whole table and a dashboard that receives every round live.
 
 | | |
 |---|---|
-| **Focus** | Product strategy · MVP · customer validation · SaaS |
-| **Stage** | Problem validation before a line of production code |
+| **My role** | Own product, end to end |
+| **Stack** | React · TypeScript · Supabase (RLS, Realtime) · Gemini |
+| **Hard part** | Business rules live in Postgres: prices are computed server-side, and the AI suggests but the database decides what exists |
 
 </details>
 
 <details>
-<summary><b>💳 &nbsp;Fintech &amp; Payment Systems</b> &nbsp;<code>day job</code></summary>
+<summary><b>🧭 &nbsp;Spine · Traceable product reasoning</b> &nbsp;<code>open source · v0.1</code></summary>
 
 <br>
 
-Financial platforms where reliability, scale, security and customer experience are all non-negotiable at once.
+CLI + Claude Code agents that keep product reasoning as a git-versioned graph next to the code, so every task shows which goal it serves and where it still rests on an unvalidated assumption.
 
 | | |
 |---|---|
-| **Focus** | Payments · frontend architecture · microfrontends · financial ops |
-| **Context** | High-volume, regulated, incident-sensitive |
+| **Stack** | TypeScript · Node · YAML/Markdown in git · GitHub Actions |
+| **Hard part** | Agent permissions enforced in code, not in the prompt · 77 tests, 15 validation rules, 7 adversarial evals |
+
+</details>
+
+<details>
+<summary><b>📚 &nbsp;English OS · Local-first study system</b> &nbsp;<code>daily use</code></summary>
+
+<br>
+
+Tracks what I produce, detects recurring mistakes and generates readings, practice and podcasts from them, running on local AI.
+
+| | |
+|---|---|
+| **Stack** | React · TypeScript · FastAPI · SQLite · FSRS · Ollama |
+| **Hard part** | Three architectures in three months, each cutover with prior verification and rollback |
 
 </details>
 
@@ -225,19 +235,19 @@ Financial platforms where reliability, scale, security and customer experience a
 
 <br>
 
-## `05` — Currently sharpening
+## `05` — Focus &amp; credentials
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/focus-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/focus-light.svg">
-  <img alt="Current focus areas" src="./assets/focus-dark.svg" width="94%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/focus-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/focus-light.svg?v=2">
+  <img alt="Current focus: Agent guard-rails & evals (Spine) · LLM features in real products (Tastify) · Local-first AI (English OS) · Product discovery with clients (Hotel CRM)" src="./assets/focus-dark.svg?v=2" width="94%">
 </picture>
 </div>
 
-> Moving from **AI Frontend Engineering → AI Product Engineering**: keeping the technical depth, adding the product and business judgment that decides *what* is worth building.
+> Engineering first, with product as the differentiator. What I'm going deeper on right now is making AI reliable inside real products: clear limits, evals and a database that has the final word.
 
-**Background** — 🎓 MSc Applied Artificial Intelligence (Tec de Monterrey) · 🎓 BSc Information Technology Engineering · 🏆 Professional Scrum Product Owner™ I · ☁️ Azure Fundamentals · 📊 Advanced specializations in AI/ML, Data Science &amp; Data Visualization
+**Credentials** — 🎓 [MSc Applied Artificial Intelligence · Tec de Monterrey](https://certificados.tec.mx/certificate/ac443de24951594489ed639728a30e04) · 🏆 [Professional Scrum Product Owner™ I](https://www.credly.com/badges/31fa03b0-fbe1-4d6e-a405-64d747b6070c/linked_in_profile) · ☁️ [Azure Fundamentals](https://www.credly.com/badges/4c23d8a9-30c9-47f7-890d-02e0fd99e37f/linked_in_profile) · 🤖 [AI &amp; Machine Learning](https://www.credential.net/65d5f712-b228-4079-9665-f6227cf9aa31#acc.Gw5mNbUT) · 📊 [Data Science](https://www.credential.net/62973c26-b6d0-4ee8-99a4-829f71c011a2#acc.2PgJhFA6) · [Data Visualization](https://www.credential.net/0b9a18ec-b9ba-41bd-8009-26346e027a26#acc.sYDgoLZC) · [Business Intelligence](https://www.credential.net/84ab1b58-7192-44e9-8526-8d8014b0df3d#acc.BMTI2GeD)
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="./assets/divider-dark.svg">
@@ -289,16 +299,16 @@ Financial platforms where reliability, scale, security and customer experience a
 
 <div align="center">
 
-### 🤝 &nbsp;Let's build something intelligent
+### 🤝 &nbsp;Let's talk
 
-I'm most useful where **AI + engineering + product + business** have to agree with each other.
-Open to conversations about AI product roles, architecture work, and automation projects.
+I'm most useful where engineering, product and AI have to agree with each other.
+Happy to talk about product engineering, architecture and AI in real products.
 
 <a href="mailto:edd.elorza@gmail.com"><img alt="Email" src="https://img.shields.io/badge/edd.elorza@gmail.com-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://eddieelorza.com/"><img alt="Portfolio" src="https://img.shields.io/badge/eddieelorza.com-22D3EE?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
 <br><br>
 
-<sub><code>Mexico City, MX</code> · <code>stats &amp; graphs generated from the GitHub API, not third-party badge services</code></sub>
+<sub><code>Mexico City, MX</code> · <code>stats &amp; graphs generated from the GitHub API</code></sub>
 
 </div>

@@ -152,7 +152,7 @@ def hero(t: dict) -> str:
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img"
-     aria-label="Eddie Elorza - AI Product Engineer">
+     aria-label="Eddie Elorza - Software Engineer, Product Builder">
 {base_defs(idp)}
   <style>
     .f  {{ opacity:0; animation: rise .85s cubic-bezier(.22,.68,.24,1) forwards; }}
@@ -195,17 +195,17 @@ def hero(t: dict) -> str:
     <g class="f" style="animation-delay:.05s">
       <rect x="64" y="62" width="9" height="9" rx="2" fill="@CYAN@"/>
       <text x="86" y="71" font-family="@MONO@" font-size="12.5" letter-spacing="3.4"
-            fill="@MUTED@">AI · PRODUCT · ENGINEERING</text>
+            fill="@MUTED@">SOFTWARE ENGINEER · PRODUCT BUILDER</text>
     </g>
 
     <text class="f" style="animation-delay:.16s" x="62" y="158" font-size="66" font-weight="800"
           letter-spacing="-2.2" fill="url(#{idp}shimmer)">Eddie Elorza</text>
 
     <text class="f" style="animation-delay:.28s" x="65" y="196" font-size="20" font-weight="500"
-          fill="@TEXT@" opacity=".92">Building intelligent products from idea to production.</text>
+          fill="@TEXT@" opacity=".92">Designing and building products end to end.</text>
 
     <text class="f" style="animation-delay:.38s" x="65" y="226" font-size="15" fill="@MUTED@">
-      Product strategy · AI systems · Frontend architecture · Fintech
+      Fintech &amp; payments · Frontend architecture · AI First
     </text>
 
     <rect class="rule" x="64" y="252" width="330" height="2.5" rx="2" fill="url(#{idp}brand)"/>
@@ -215,7 +215,7 @@ def hero(t: dict) -> str:
         <tspan fill="@CYAN@">~</tspan> Mexico City, MX
         <tspan fill="@FAINT@">  |  </tspan>MSc Applied AI
         <tspan fill="@FAINT@">  |  </tspan>PSPO I
-        <tspan fill="@FAINT@">  |  </tspan>6+ yrs fintech<tspan class="caret" fill="@CYAN@">_</tspan>
+        <tspan fill="@FAINT@">  |  </tspan>6+ yrs building software<tspan class="caret" fill="@CYAN@">_</tspan>
       </text>
     </g>
   </g>
@@ -224,7 +224,7 @@ def hero(t: dict) -> str:
 
 
 # ---------------------------------------------------------------- PIPELINE
-STAGES = ["Problem", "Discovery", "Strategy", "Architecture", "Engineering", "Data", "Impact"]
+STAGES = ["Problem", "Scope", "Solution", "Plan", "Build", "Quality", "Operate"]
 
 
 def pipeline(t: dict) -> str:
@@ -252,7 +252,7 @@ def pipeline(t: dict) -> str:
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img"
-     aria-label="Problem to Impact delivery pipeline">
+     aria-label="Problem to Operate delivery method">
 {base_defs(idp)}
   <style>
     .f   {{ opacity:0; animation: rise .6s ease-out forwards; }}
@@ -284,58 +284,62 @@ def pipeline(t: dict) -> str:
   <g>{''.join(labels)}</g>
   <text x="{W//2}" y="{H - 12}" text-anchor="middle" font-family="@FONT@" font-size="12"
         fill="@MUTED@" class="f" style="animation-delay:.9s" opacity="0">
-    from product idea → architecture → code → measurable impact
+    from business problem → architecture → code → operation
   </text>
 </svg>
 """
 
 
-# ---------------------------------------------------------------- FOCUS BARS
+# ---------------------------------------------------------------- FOCUS
+# Sin porcentajes: cada foco apunta al proyecto que lo respalda.
 FOCUS = [
-    ("AI Product Management", 95),
-    ("AI Agents &amp; Orchestration", 90),
-    ("Product Analytics", 82),
-    ("Digital Transformation", 78),
-    ("Engineering Leadership", 74),
-    ("Business Strategy", 70),
+    ("Agent guard-rails &amp; evals",     "Spine"),
+    ("LLM features in real products",   "Tastify"),
+    ("Local-first AI",                  "English OS"),
+    ("Product discovery with clients",  "Hotel CRM"),
 ]
 
 
 def focus(t: dict) -> str:
     W = 1000
-    rowh, top = 38, 26
-    H = top + rowh * len(FOCUS) + 12
+    rowh, top = 58, 22
+    H = top + rowh * len(FOCUS) + 10
     idp = "f_"
-    lx, bx, bw = 26, 300, 610
+    lx, rx = 30, W - 30
+    accents = ["@VIOLET@", "@BLUE@", "@CYAN@", "@MAGENTA@"]
+    aria = "Current focus: " + " · ".join(f"{l} ({p})" for l, p in FOCUS)
 
     rows = []
-    for i, (label, pct) in enumerate(FOCUS):
+    for i, (label, proof) in enumerate(FOCUS):
         y = top + rowh * i
-        w = bw * pct / 100
-        d = 0.18 + i * 0.11
+        cy = y + 22
+        d = 0.15 + i * 0.16
+        pw = text_w(proof) + PILL_PAD
+        px = rx - pw
+        lw = text_w(label.replace("&amp;", "&")) * 1.2
+        x1, x2 = lx + 24 + lw + 18, px - 16
         rows.append(f"""
     <g>
-      <text x="{lx}" y="{y + 15}" font-family="@FONT@" font-size="14.5" font-weight="500"
+      <circle cx="{lx + 6}" cy="{cy}" r="5" fill="{accents[i % 4]}" filter="url(#{idp}glow)"
+              class="f" style="animation-delay:{d:.2f}s"/>
+      <text x="{lx + 24}" y="{cy + 6}" font-family="@FONT@" font-size="16.5" font-weight="600"
             fill="@TEXT@" class="f" style="animation-delay:{d:.2f}s">{label}</text>
-      <rect x="{bx}" y="{y + 4}" width="{bw}" height="9" rx="4.5" fill="@FAINT@" opacity=".55"/>
-      <rect x="{bx}" y="{y + 4}" width="0" height="9" rx="4.5" fill="url(#{idp}brand)">
-        <animate attributeName="width" from="0" to="{w:.0f}" dur="1.15s"
-                 begin="{d + 0.1:.2f}s" fill="freeze"
-                 calcMode="spline" keySplines="0.2 0.7 0.2 1" keyTimes="0;1"/>
-      </rect>
-      <circle cx="{bx}" cy="{y + 8.5}" r="5.5" fill="@CYAN@" filter="url(#{idp}glow)" opacity="0">
-        <animate attributeName="cx" from="{bx}" to="{bx + w:.0f}" dur="1.15s"
-                 begin="{d + 0.1:.2f}s" fill="freeze"
-                 calcMode="spline" keySplines="0.2 0.7 0.2 1" keyTimes="0;1"/>
-        <animate attributeName="opacity" values="0;1;1;.55" dur="1.15s"
-                 begin="{d + 0.1:.2f}s" fill="freeze"/>
-      </circle>
-      <text x="{bx + bw + 34}" y="{y + 14}" text-anchor="end" font-family="@MONO@" font-size="12.5"
-            fill="@MUTED@" class="f" style="animation-delay:{d + 0.85:.2f}s">{pct}%</text>
+      <path d="M{x1:.0f} {cy}H{x2:.0f}" stroke="@FAINT@" stroke-width="1.6"
+            stroke-dasharray="{x2 - x1:.0f}" stroke-dashoffset="{x2 - x1:.0f}">
+        <animate attributeName="stroke-dashoffset" from="{x2 - x1:.0f}" to="0" dur=".9s"
+                 begin="{d + 0.15:.2f}s" fill="freeze"/>
+      </path>
+      <g class="f" style="animation-delay:{d + 0.55:.2f}s">
+        <rect x="{px:.0f}" y="{cy - 14}" width="{pw:.0f}" height="28" rx="14"
+              fill="@SURFACE@" stroke="@FAINT@"/>
+        <circle cx="{px + 15:.0f}" cy="{cy}" r="3.5" fill="{accents[i % 4]}"/>
+        <text x="{px + 26:.0f}" y="{cy + 5}" font-family="@FONT@" font-size="13.5"
+              font-weight="500" fill="@MUTED@">{proof}</text>
+      </g>
     </g>""")
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"
-     role="img" aria-label="Current focus areas">
+     role="img" aria-label="{aria}">
 {base_defs(idp)}
   <style>
     .f {{ opacity:0; animation: rise .55s ease-out forwards; }}
@@ -353,11 +357,11 @@ def focus(t: dict) -> str:
 # Warp ni Ollama (devuelve un placeholder "?"), y dibujar logos de marca a
 # mano seria impreciso. El texto envejece mejor.
 TOOLING = [
-    ("AI TOOLING",    ["Claude Code", "Cursor", "Warp", "Ollama", "LLM orchestration"]),
-    ("AGENTIC LAYER", ["LLM agents", "MCP servers", "Skills", "Vector search", "RAG"]),
-    ("ARCHITECTURE",  ["Module Federation", "Microfrontends", "n8n"]),
-    ("OBSERVABILITY", ["Dynatrace", "Elastic APM", "Core Web Vitals", "Event tracking"]),
-    ("PRODUCT OPS",   ["Jira", "Miro", "A/B testing"]),
+    ("AI TOOLING",    ["Claude Code", "Cursor", "Warp", "Ollama"]),
+    ("AGENTIC LAYER", ["Coding agents", "MCP servers", "Skills", "Guard-rails", "Evals"]),
+    ("ARCHITECTURE",  ["Module Federation", "qiankun", "Microfrontends"]),
+    ("TESTING",       ["Jest", "Testing Library", "Playwright"]),
+    ("PRODUCT OPS",   ["Jira", "Miro"]),
 ]
 
 # No hay forma de medir texto sin las metricas de la fuente, y estirar el

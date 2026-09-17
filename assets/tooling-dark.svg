@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 607 312" width="607" height="312"
-     role="img" aria-label="AI TOOLING: Claude Code, Cursor, Warp, Ollama, LLM orchestration · AGENTIC LAYER: LLM agents, MCP servers, Skills, Vector search, RAG · ARCHITECTURE: Module Federation, Microfrontends, n8n · OBSERVABILITY: Dynatrace, Elastic APM, Core Web Vitals, Event tracking · PRODUCT OPS: Jira, Miro, A/B testing">
+     role="img" aria-label="AI TOOLING: Claude Code, Cursor, Warp, Ollama · AGENTIC LAYER: Coding agents, MCP servers, Skills, Guard-rails, Evals · ARCHITECTURE: Module Federation, qiankun, Microfrontends · TESTING: Jest, Testing Library, Playwright · PRODUCT OPS: Jira, Miro">
 
   <defs>
     <linearGradient id="t_brand" x1="0" y1="0" x2="1" y2="0">
@@ -69,48 +69,41 @@
       <circle cx="344" cy="61" r="3.5" fill="#E879F9"/>
       <text x="355" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
             font-weight="500" fill="#EEF2FB">Ollama</text>
-    </g>
-    <g class="p" style="animation-delay:0.42s">
-      <rect x="423" y="48" width="154" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="438" cy="61" r="3.5" fill="#8B5CF6"/>
-      <text x="449" y="65" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">LLM orchestration</text>
     </g><text x="30" y="94" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">AGENTIC LAYER</text>
     <g class="p" style="animation-delay:0.34s">
-      <rect x="30" y="102" width="115" height="26" rx="13"
+      <rect x="30" y="102" width="129" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
       <circle cx="45" cy="115" r="3.5" fill="#8B5CF6"/>
       <text x="56" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">LLM agents</text>
+            font-weight="500" fill="#EEF2FB">Coding agents</text>
     </g>
     <g class="p" style="animation-delay:0.41s">
-      <rect x="154" y="102" width="120" height="26" rx="13"
+      <rect x="168" y="102" width="120" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="169" cy="115" r="3.5" fill="#3B82F6"/>
-      <text x="180" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+      <circle cx="183" cy="115" r="3.5" fill="#3B82F6"/>
+      <text x="194" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
             font-weight="500" fill="#EEF2FB">MCP servers</text>
     </g>
     <g class="p" style="animation-delay:0.48s">
-      <rect x="283" y="102" width="78" height="26" rx="13"
+      <rect x="296" y="102" width="78" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="298" cy="115" r="3.5" fill="#22D3EE"/>
-      <text x="309" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+      <circle cx="311" cy="115" r="3.5" fill="#22D3EE"/>
+      <text x="322" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
             font-weight="500" fill="#EEF2FB">Skills</text>
     </g>
     <g class="p" style="animation-delay:0.55s">
-      <rect x="370" y="102" width="126" height="26" rx="13"
+      <rect x="383" y="102" width="108" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="385" cy="115" r="3.5" fill="#E879F9"/>
-      <text x="396" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Vector search</text>
+      <circle cx="398" cy="115" r="3.5" fill="#E879F9"/>
+      <text x="409" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Guard-rails</text>
     </g>
     <g class="p" style="animation-delay:0.62s">
-      <rect x="504" y="102" width="68" height="26" rx="13"
+      <rect x="500" y="102" width="77" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="519" cy="115" r="3.5" fill="#8B5CF6"/>
-      <text x="530" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">RAG</text>
+      <circle cx="515" cy="115" r="3.5" fill="#8B5CF6"/>
+      <text x="526" y="119" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Evals</text>
     </g><text x="30" y="148" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">ARCHITECTURE</text>
     <g class="p" style="animation-delay:0.54s">
       <rect x="30" y="156" width="156" height="26" rx="13"
@@ -120,46 +113,39 @@
             font-weight="500" fill="#EEF2FB">Module Federation</text>
     </g>
     <g class="p" style="animation-delay:0.61s">
-      <rect x="195" y="156" width="133" height="26" rx="13"
+      <rect x="195" y="156" width="90" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
       <circle cx="210" cy="169" r="3.5" fill="#3B82F6"/>
       <text x="221" y="173" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Microfrontends</text>
+            font-weight="500" fill="#EEF2FB">qiankun</text>
     </g>
     <g class="p" style="animation-delay:0.68s">
-      <rect x="338" y="156" width="65" height="26" rx="13"
+      <rect x="295" y="156" width="133" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="353" cy="169" r="3.5" fill="#22D3EE"/>
-      <text x="364" y="173" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">n8n</text>
-    </g><text x="30" y="202" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">OBSERVABILITY</text>
+      <circle cx="310" cy="169" r="3.5" fill="#22D3EE"/>
+      <text x="321" y="173" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Microfrontends</text>
+    </g><text x="30" y="202" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">TESTING</text>
     <g class="p" style="animation-delay:0.74s">
-      <rect x="30" y="210" width="103" height="26" rx="13"
+      <rect x="30" y="210" width="69" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
       <circle cx="45" cy="223" r="3.5" fill="#8B5CF6"/>
       <text x="56" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Dynatrace</text>
+            font-weight="500" fill="#EEF2FB">Jest</text>
     </g>
     <g class="p" style="animation-delay:0.81s">
-      <rect x="142" y="210" width="118" height="26" rx="13"
+      <rect x="108" y="210" width="135" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="157" cy="223" r="3.5" fill="#3B82F6"/>
-      <text x="168" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Elastic APM</text>
+      <circle cx="123" cy="223" r="3.5" fill="#3B82F6"/>
+      <text x="134" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Testing Library</text>
     </g>
     <g class="p" style="animation-delay:0.88s">
-      <rect x="269" y="210" width="139" height="26" rx="13"
+      <rect x="253" y="210" width="108" height="26" rx="13"
             fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="284" cy="223" r="3.5" fill="#22D3EE"/>
-      <text x="295" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Core Web Vitals</text>
-    </g>
-    <g class="p" style="animation-delay:0.95s">
-      <rect x="417" y="210" width="130" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="432" cy="223" r="3.5" fill="#E879F9"/>
-      <text x="443" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">Event tracking</text>
+      <circle cx="268" cy="223" r="3.5" fill="#22D3EE"/>
+      <text x="279" y="227" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
+            font-weight="500" fill="#EEF2FB">Playwright</text>
     </g><text x="30" y="256" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" font-weight="700" fill="#8A97B1" letter-spacing="2">PRODUCT OPS</text>
     <g class="p" style="animation-delay:0.94s">
       <rect x="30" y="264" width="66" height="26" rx="13"
@@ -174,12 +160,5 @@
       <circle cx="120" cy="277" r="3.5" fill="#3B82F6"/>
       <text x="131" y="281" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
             font-weight="500" fill="#EEF2FB">Miro</text>
-    </g>
-    <g class="p" style="animation-delay:1.08s">
-      <rect x="184" y="264" width="112" height="26" rx="13"
-            fill="#131A2B" stroke="#2A3346"/>
-      <circle cx="199" cy="277" r="3.5" fill="#22D3EE"/>
-      <text x="210" y="281" font-family="'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5"
-            font-weight="500" fill="#EEF2FB">A/B testing</text>
     </g>
 </svg>
